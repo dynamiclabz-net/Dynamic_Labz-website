@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Web & Mobile App Development | Dynamic Labz</title>
+    
+    <meta name="description" content="We architect high-performance custom portals, mobile applications, and enterprise e-commerce frameworks with flawless UI/UX and native engineering.">
+    <meta name="keywords" content="Custom Web Development, Mobile App Development, React Native, Next.js, Enterprise Portals, SaaS App Developers Ahmedabad">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Custom Web & Mobile App Development | Dynamic Labz">
+    <meta property="og:description" content="Architecture and deployment of high-performance custom platforms and mobile applications.">
+    <meta property="og:url" content="https://www.dynamiclabz.net/web-app.html">
+    <meta property="og:image" content="assets/images/dynamiclabz/og-webapp.jpg">
+    
+    <link rel="icon" type="image/png" href="assets/images/dynamiclabz/icon-1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <noscript>
+        <style>
+            #preloader { display: none !important; }
+            body { overflow: visible !important; }
+        </style>
+    </noscript>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <!-- <div id="preloader">
+        <div class="preloader-content">
+            
+            <svg class="geom-logo" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(0, 1)">
+                    <path class="gem-line" d="M3.54686 30.6596C3.91779 31.0771 4.10325 31.6105 4.08007 32.1207C4.05689 32.6541 3.84824 33.1643 3.43095 33.5354C2.59636 34.3007 1.3213 34.2544 0.556262 33.4194C0.185335 33.002 -0.000128871 32.4686 0.0230541 31.9583C0.046237 31.4481 0.254883 30.9147 0.672176 30.5436C1.48358 29.7551 2.78182 29.8247 3.54686 30.6596Z"/>
+                    <path class="gem-line" d="M32.1545 17.765C32.1545 17.8114 32.1313 17.8809 32.1313 17.9273C32.1082 18.3912 32.2009 18.855 32.3864 19.2725L26.0806 25.0936L19.7748 30.9148C19.3112 30.6597 18.8012 30.5437 18.2911 30.5437L11.4753 10.6683C11.7535 10.5059 12.0317 10.3204 12.2867 10.0885C12.5418 9.85653 12.7504 9.60142 12.9127 9.32312L32.1545 17.765Z"/>
+                    <path class="gem-line" d="M5.72617 33.2574L15.4398 34.1619C15.5557 34.649 15.7876 35.1128 16.1585 35.5071C16.5294 35.9245 16.9931 36.1796 17.4799 36.342L17.6886 44.1113L17.7813 47.4973C17.5031 47.6133 17.2249 47.7756 16.9931 47.9611L4.84521 34.7649C5.23932 34.3243 5.5407 33.8141 5.72617 33.2574Z"/>
+                    <path class="gem-line" d="M21.2588 33.8143C21.3052 33.304 21.2356 32.7474 21.0038 32.2604L33.6385 20.618C34.1021 20.8732 34.6354 21.0123 35.1454 20.9891L42.448 41.4908C42.1698 41.6299 41.9148 41.8155 41.683 42.0474C41.4511 42.2561 41.2425 42.5112 41.0802 42.7663L21.2588 33.8143Z"/>
+                    <path class="gem-line" d="M31.7374 4.68457C32.317 5.31075 33.0588 5.7282 33.8934 5.86735V6.19204L34.1021 15.2369C33.7311 15.376 33.3834 15.5616 33.082 15.8399C33.0125 15.9095 32.9429 15.979 32.8734 16.0486L26.2894 13.1728L13.5156 7.58356C13.5156 7.51398 13.5388 7.4676 13.5388 7.39802C13.5388 7.14291 13.5388 6.86461 13.4924 6.6095L30.7405 2.62048C30.8565 3.38582 31.2042 4.10477 31.7374 4.68457Z"/>
+                    <path class="gem-line" d="M44.488 41.0266C44.4185 41.0266 44.3258 41.0266 44.2562 41.0266L36.9072 20.3858C36.9768 20.3394 37.0463 20.293 37.0927 20.2235C37.3941 19.9452 37.6027 19.6437 37.765 19.2958L47.5946 20.5018C47.6177 21.4526 47.9655 22.3339 48.6146 23.0297C49.1015 23.5631 49.7042 23.9342 50.3765 24.1197L45.2067 41.1194C44.9981 41.073 44.7431 41.0266 44.488 41.0266Z"/>
+                    <path class="gem-line" d="M35.9799 3.5486C35.1453 4.31393 33.8702 4.26755 33.1052 3.43264C32.7343 3.01518 32.5488 2.48177 32.572 1.97155C32.5952 1.46132 32.8038 0.92791 33.2211 0.556839C34.0557 -0.208495 35.3308 -0.162111 36.0958 0.672799C36.4667 1.09025 36.6522 1.62367 36.629 2.13389C36.6058 2.64411 36.374 3.15434 35.9799 3.5486Z"/>
+                    <path class="gem-line" d="M42.3088 44.8298C42.332 44.2964 42.5406 43.7862 42.9579 43.4151C43.7925 42.6498 45.0676 42.6962 45.8326 43.5311C46.2035 43.9485 46.389 44.4819 46.3658 44.9922C46.3426 45.5256 46.134 46.0358 45.7167 46.4069C44.8821 47.1722 43.607 47.1258 42.842 46.2909C42.4479 45.8735 42.2856 45.34 42.3088 44.8298Z"/>
+                    
+                    <path class="gem-line gem-line-faded" d="M9.50492 11.1326C9.57447 11.1326 9.62083 11.1326 9.69038 11.1326L16.5525 31.124C16.483 31.1704 16.4134 31.24 16.3207 31.3095C16.0193 31.5878 15.7643 31.9357 15.602 32.3068L5.86519 31.4023C5.74928 30.6602 5.40154 29.9644 4.89151 29.3846C4.38149 28.8512 3.75555 28.4569 3.06006 28.2714L8.69351 10.9934C8.94853 11.0862 9.22672 11.1326 9.50492 11.1326Z"/>
+                    <path class="gem-line gem-line-faded" d="M48.8464 17.5335C48.4755 17.8582 48.1973 18.2525 47.9886 18.6931L37.9736 17.464C37.8809 16.9537 37.6259 16.4435 37.2549 16.0261C36.884 15.6318 36.4203 15.3535 35.9335 15.1911L35.7249 5.86798V5.75202C36.2812 5.58968 36.7913 5.28818 37.2086 4.89392L48.8464 17.5335Z"/>
+                    <path class="gem-line gem-line-faded" d="M21.2585 48.262C20.7949 47.775 20.2153 47.4503 19.6125 47.3112L19.3344 36.2718C19.7053 36.1326 20.053 35.9471 20.3544 35.6688C20.4239 35.6224 20.4703 35.5529 20.5399 35.4833L40.5004 44.5049C40.5004 44.5745 40.4772 44.6673 40.4772 44.7369C40.4772 44.992 40.4772 45.2471 40.5236 45.5022L22.0004 49.6304C21.8613 49.1201 21.6295 48.6563 21.2585 48.262Z"/>
+                    <path class="gem-line gem-line-faded" d="M11.6842 7.32896C11.661 7.86237 11.4524 8.3726 11.0351 8.74367C10.2005 9.509 8.92542 9.46262 8.16039 8.62771C7.78946 8.21025 7.604 7.67684 7.62718 7.16662C7.65036 6.6332 7.85901 6.12298 8.2763 5.75191C9.11089 4.98657 10.3859 5.03296 11.151 5.86787C11.5451 6.28532 11.7074 6.81874 11.6842 7.32896Z"/>
+                    <path class="gem-line gem-line-faded" d="M49.9823 21.7775C49.6114 21.36 49.4259 20.8266 49.4491 20.3164C49.4723 19.783 49.6809 19.2728 50.0982 18.9017C50.9328 18.1364 52.2078 18.1827 52.9729 19.0176C53.3438 19.4351 53.5293 19.9685 53.5061 20.4787C53.4829 21.0122 53.2743 21.5224 52.857 21.8934C52.0456 22.6588 50.7473 22.6124 49.9823 21.7775Z"/>
+                    <path class="gem-line gem-line-faded" d="M17.5495 48.8886C18.3841 48.1233 19.6591 48.1697 20.4242 49.0046C20.7951 49.422 20.9806 49.9555 20.9574 50.4657C20.9342 50.9759 20.7256 51.5093 20.3083 51.8804C19.4737 52.6457 18.1986 52.5993 17.4336 51.7644C17.0627 51.347 16.8772 50.8136 16.9004 50.3033C16.9236 49.7931 17.1554 49.2597 17.5495 48.8886Z"/>
+                </g>
+            </svg>
+            
+            <div class="loading-text">ARCHITECTING SYSTEM <span id="progress-text" class="text-brand">0%</span></div>
+        </div>
+    </div> -->
+
+    <div id="page-transition"></div>
+
+    <canvas id="quantum-network"></canvas>
+    <div class="grid-floor"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-wrap">
+            <div class="brand">
+                <a href="index.html"><img src="assets/images/dynamiclabz/logo.svg" alt="Dynamic Labz Mark" class="nav-mark"></a>
+            </div>
+            
+            <div class="nav-links">
+                <div class="nav-dropdown">
+                    <a href="index.html" style="cursor: pointer;">Home <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px; opacity: 0.7;"></i></a>
+                    
+                    <div class="dropdown-menu">
+                        <a href="index.html#work">Case Studies</a>
+                        <a href="index.html#process">Deployment Protocol</a>
+                        <a href="index.html#testimonials">Success Stories</a>
+                    </div>
+                </div>
+
+                <div class="nav-dropdown">
+                    <a href="index.html#services" style="cursor: pointer;">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px; opacity: 0.7;"></i></a>
+                    
+                    <div class="dropdown-menu">
+                        <a href="web-app.html">Web & App Development</a>
+                        <a href="automation.html">Business Automation</a>
+                        <a href="ai-chatbot.html">AI & Chatbots</a>
+                        <a href="marketing.html">Marketing & SEO Services</a>
+                    </div>
+                </div>
+                
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+            </div>
+            
+            <a href="contact.html" class="btn-glass desktop-cta" style="font-size: 1.1rem;">Initiate Project</a>
+
+            <button class="mobile-menu-toggle" aria-label="Open mobile menu">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+        </div>
+    </nav>
+
+    <!-- Navbar - Mobile -->
+    <div class="mobile-menu-overlay" id="mobile-dropdown">
+        <div class="mobile-menu-content">
+            <a href="index.html" class="m-link" style="color: var(--brand);">Home</a>
+            <a href="index.html#work" class="m-link" style="font-size: 0.95rem; opacity: 0.8; padding-left: 2rem;">— Case Studies</a>
+            <a href="index.html#process" class="m-link" style="font-size: 0.95rem; opacity: 0.8; padding-left: 2rem;">— Deployment Protocol</a>
+            <a href="index.html#testimonials" class="m-link" style="font-size: 0.95rem; opacity: 0.8; padding-left: 2rem;">— Success Stories</a>
+
+            <a href="index.html#services" class="m-link" style="color: var(--brand);">Services</a>
+            <a href="web-app.html" class="m-link" style="font-size: 0.95rem; opacity: 0.8; padding-left: 2rem;">— Web & App Development</a>
+            <a href="automation.html" class="m-link" style="font-size: 0.95rem; opacity: 0.8; padding-left: 2rem;">— Business Automation</a>
+            <a href="ai-chatbot.html" class="m-link" style="font-size: 0.95rem; opacity: 0.8; padding-left: 2rem;">— AI & Chatbots</a>
+            <a href="marketing.html" class="m-link" style="font-size: 0.95rem; opacity: 0.8; padding-left: 2rem;">— Marketing & SEO Services</a>
+
+            <a href="about.html" class="m-link">About Us</a>
+            <a href="portfolio.html" class="m-link">Portfolio</a>
+            <a href="contact.html" class="btn-primary" style="margin-top: 1rem; padding: 0.8rem; font-size: 1rem; text-align: center; border-radius: 8px;">Initiate Project</a>
+        </div>
+    </div>
+
+    <main id="smooth-wrapper">
+        
+        <!-- Hero Section -->
+        <section class="page-header">
+            <div class="container hero-inner text-center">
+                <div class="pill-badge fade-up" style="margin: 0 auto 2rem auto;">
+                    <span class="live-dot"></span> <span style="letter-spacing: 1px;">SERVICES / WEB & APP DEVELOPMENT</span>
+                </div>
+                <h1 class="hero-title reveal-text" style="text-align: center; width: 100%; max-width: 1000px; margin: 0 auto;">
+                    High-Performance <span class="text-brand">Architecture.</span>
+                </h1>
+                <p class="hero-desc fade-up" style="margin: 2rem auto 0 auto; text-align: center;">
+                    We engineer bespoke web platforms, secure enterprise portals, and scalable mobile applications designed to drive aggressive business growth.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Detail Section -->
+        <section class="services-detail" style="padding: 5rem 0 8rem 0;">
+            <div class="container">
+                <div class="glass-grid">
+                    
+                    <div class="glass-card fade-up">
+                        <i class="fa-solid fa-server s-icon"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Custom Portals</h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">Secure, complex dashboards and client portals built for enterprise data management. We focus on absolute security, rapid load times, and intuitive user experiences.</p>
+                        <ul class="pillar-list" style="margin: 0;">
+                            <li><i class="fa-solid fa-check"></i> Healthcare & Pharmacy Portals</li>
+                            <li><i class="fa-solid fa-check"></i> Financial Advisory Dashboards</li>
+                            <li><i class="fa-solid fa-check"></i> Internal Admin Tools</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="glass-card fade-up" style="transition-delay: 0.1s;">
+                        <i class="fa-solid fa-mobile-screen-button s-icon"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Mobile Applications</h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">Native and cross-platform mobile apps engineered for speed and reliability. We bridge the gap between complex backend systems and flawless mobile UI.</p>
+                        <ul class="pillar-list" style="margin: 0;">
+                            <li><i class="fa-solid fa-check"></i> React Native & Flutter</li>
+                            <li><i class="fa-solid fa-check"></i> iOS & Android Deployment</li>
+                            <li><i class="fa-solid fa-check"></i> API & Backend Integration</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card fade-up" style="transition-delay: 0.2s;">
+                        <i class="fa-solid fa-cart-shopping s-icon"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Enterprise E-Commerce</h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 3rem;">High-speed, conversion-optimized storefronts that handle massive traffic and complex inventory syncing seamlessly.</p>
+                        <ul class="pillar-list" style="margin: 0;">
+                            <li><i class="fa-solid fa-check"></i> Headless Commerce (Next.js)</li>
+                            <li><i class="fa-solid fa-check"></i> Custom Checkout Flows</li>
+                            <li><i class="fa-solid fa-check"></i> Third-Party ERP Syncing</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio-section" style="padding: 0 0 8rem 0; border-top: 1px solid var(--border-color); padding-top: 8rem;">
+            <div class="container">
+                <div class="section-header-row fade-up">
+                    <div class="pill-badge"><span class="live-dot"></span> <span>PROVEN CAPABILITIES</span></div>
+                    <h2 class="section-heading">Deployed Architectures</h2>
+                    <p class="hero-desc">Real-world platforms engineered by Dynamic Labz.</p>
+                </div>
+                
+                <!-- <div class="portfolio-grid" style="grid-template-columns: repeat(2, 1fr); gap: 3rem;">
+                    
+                    The MEWA Project
+                    <div class="portfolio-card fade-up glass-card" style="grid-column: 1 / -1; display: flex; flex-direction: row; padding: 0; overflow: hidden; gap: 0;">
+                        <div class="p-card-content" style="flex: 1; padding: 2.5rem; justify-content: center;">
+                            <span class="p-category text-brand">Fintech Web & App Platform</span>
+                            
+                            <h3 style="font-size: 2.2rem; margin-bottom: 1rem;">The MEWA</h3>
+                            
+                            <p style="font-size: 1.05rem; margin-bottom: 2rem;">A secure, subscription-based mobile application and web platform delivering real-time stock market recommendations and financial advisory services.</p>
+                            
+                            <button onclick="openCaseStudy('cs-the-mewa')" class="btn-text"
+                                style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main);">
+                                Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div class="p-card-image" style="flex: 1; height: auto; border-left: 1px solid var(--border-color); border-bottom: none;">
+                            <img src="assets/images/project_The-MEWA/TheMewa.png" alt="The MEWA Platform">
+                        </div>
+                    </div>
+
+                    Baker's Hub Project
+                    <div class="portfolio-card fade-up glass-card" style="padding: 0; overflow: hidden;">
+                        <div class="p-card-image" style="height: 250px; border-bottom: 1px solid var(--border-color);">
+                            <img src="assets/images/project_BakersHub/BakersHub.png" alt="Bakers Hub SaaS">
+                        </div>
+                        <div class="p-card-content" style="padding: 2.5rem;">
+                            <span class="p-category text-brand">SaaS Management Tool</span>
+                            <h3 style="font-size: 1.6rem; margin-bottom: 1rem;">Baker's Hub</h3>
+                            <p style="margin-bottom: 1.5rem;">A specialized mobile application and companion website allowing homebakers to seamlessly manage inventory, track live orders, and scale their businesses.</p>
+                            <button onclick="openCaseStudy('cs-bakers-hub')" class="btn-text"
+                                style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main);">
+                                Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    Barecce Project
+                    <div class="portfolio-card fade-up glass-card" style="padding: 0; overflow: hidden; transition-delay: 0.1s;">
+                        <div class="p-card-image" style="height: 250px; border-bottom: 1px solid var(--border-color);">
+                            <img src="assets/images/project_Barecee/Barecee.PNG" alt="Barecce Agency">
+                        </div>
+                        <div class="p-card-content" style="padding: 2.5rem;">
+                            <span class="p-category text-brand">High-Conversion Web Presence</span>
+                            
+                            <h3 style="font-size: 1.6rem; margin-bottom: 1rem;">Barecce</h3>
+                            
+                            <p style="margin-bottom: 1.5rem;">A striking digital presence and landing page engineered to capture high-value leads and drive brand growth for a modern marketing agency.</p>
+                            
+                            <button onclick="openCaseStudy('modal-barecce')" class="btn-text"
+                                style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; font-family: var(--font-main);">
+                                Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    JumpinGo Project
+                    <div class="portfolio-card fade-up glass-card" style="padding: 0; overflow: hidden;">
+                        <div class="p-card-image" style="height: 250px; border-bottom: 1px solid var(--border-color);">
+                            <img src="assets/images/project_JumpinGo/JumpinGo.png" alt="Event Ticketing Portal">
+                        </div>
+                        <div class="p-card-content" style="padding: 2.5rem; display: flex; flex-direction: column;">
+                            <span class="p-category text-brand">High-Volume Ticketing Backend</span>
+                            <h3 style="font-size: 1.6rem; margin-bottom: 1rem;">JumpinGo</h3>
+                            <p style="margin-bottom: 1.5rem;">A custom web portal engineered to handle massive, temporary traffic spikes for a traveling jumping park festival, featuring a heavy backend booking system.</p>
+                            
+                            <button onclick="openCaseStudy('modal-jumpingo')" class="btn-text"
+                                style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left;">
+                                Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    DiamondFairPrice Project
+                    <div class="portfolio-card fade-up glass-card" style="padding: 0; overflow: hidden; transition-delay: 0.3s;">
+                        <div class="p-card-image" style="height: 250px; border-bottom: 1px solid var(--border-color);">
+                            <img src="assets/images/project_DiamondFairPrice/logo.png" alt="Diamond Fair Price Platform">
+                        </div>
+                        <div class="p-card-content" style="padding: 2.5rem; display: flex; flex-direction: column;">
+                            <span class="p-category text-brand">Interactive Educational Tool</span>
+                            <h3 style="font-size: 1.6rem; margin-bottom: 1rem;">Diamond Fair Price</h3>
+                            <p style="margin-bottom: 1.5rem;">A premium landing page featuring an interactive, step-by-step selection tool designed to guide users through the complexities of buying a diamond.</p>
+                            
+                            <button onclick="openCaseStudy('modal-diamond')" class="btn-text"
+                                style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left;">
+                                Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    Jirawala Tours & Travels Project
+                    <div class="portfolio-card fade-up glass-card" style="padding: 0; overflow: hidden; transition-delay: 0.2s;">
+                        <div class="p-card-image" style="height: 250px; border-bottom: 1px solid var(--border-color);">
+                            <img src="assets/images/project_Jirawala/JiraWala1-nobg-blue.png" alt="Jirawala Tours & Travels">
+                        </div>
+                        <div class="p-card-content" style="padding: 2.5rem; display: flex; flex-direction: column;">
+                            <span class="p-category text-brand">Fleet Booking & Lead Generation</span>
+                            <h3 style="font-size: 1.6rem; margin-bottom: 1rem;">Jirawala Tours & Travels</h3>
+                            <p style="margin-bottom: 1.5rem;">A custom taxi booking and fare estimation portal designed to capture qualified leads for corporate and holiday travel.</p>
+                            
+                            <button onclick="openCaseStudy('modal-jirawala')" class="btn-text"
+                                style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left;">
+                                Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    Property Management Project
+                    <div class="portfolio-card fade-up glass-card" style="padding: 0; overflow: hidden; transition-delay: 0.1s;">
+                        <div class="p-card-image" style="height: 250px; border-bottom: 1px solid var(--border-color);">
+                            <img src="assets/images/project_SquareSecond/SquareSecond.jpeg" alt="Property Management Portal">
+                        </div>
+                        <div class="p-card-content" style="padding: 2.5rem;">
+                            <span class="p-category text-brand">Enterprise CRM & Matching Engine</span>
+                            <h3 style="font-size: 1.6rem; margin-bottom: 1rem;">Property Management</h3>
+                            <p style="margin-bottom: 1.5rem;">A comprehensive property portal featuring an intelligent matching algorithm based on 35+ parameters and a robust 70-point addition module with Role-Based Access Control.</p>
+                            <button onclick="openCaseStudy('cs-property-management')" class="btn-text"
+                                style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main);">
+                                Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div> -->
+            
+                <div class="portfolio-grid" style="grid-template-columns: repeat(2, 1fr); gap: 3rem;">
+                
+                    <div class="portfolio-card fade-up glass-card"
+                        style="padding: 3.5rem; display: flex; flex-direction: column; position: relative; overflow: hidden; min-height: 400px; gap: 0;">
+                        <div
+                            style="position: absolute; top: -10%; right: -5%; font-size: 16rem; font-weight: 800; color: var(--brand); opacity: 0.09; line-height: 1; pointer-events: none; user-select: none; font-family: var(--font-mono);">
+                            01</div>
+                
+                        <span class="p-category text-brand" style="margin-bottom: 1rem; position: relative; z-index: 1;">Fintech Web &
+                            App Platform</span>
+                        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; position: relative; z-index: 1;">The MEWA</h3>
+                        <p
+                            style="margin-bottom: 2rem; position: relative; z-index: 1; font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+                            A secure, subscription-based mobile application and web platform delivering real-time stock market
+                            recommendations and financial advisory services.</p>
+                
+                        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 3rem; position: relative; z-index: 1;">
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Django</span>
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Cross-Platform App</span>
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Live FII/DII APIs</span>
+                        </div>
+                
+                        <button onclick="openCaseStudy('cs-the-mewa')" class="btn-text"
+                            style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left; position: relative; z-index: 1;">
+                            Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                
+                    <div class="portfolio-card fade-up glass-card"
+                        style="padding: 3.5rem; display: flex; flex-direction: column; position: relative; overflow: hidden; min-height: 400px; gap: 0;">
+                        <div
+                            style="position: absolute; top: -10%; right: -5%; font-size: 16rem; font-weight: 800; color: var(--brand); opacity: 0.09; line-height: 1; pointer-events: none; user-select: none; font-family: var(--font-mono);">
+                            02</div>
+                
+                        <span class="p-category text-brand" style="margin-bottom: 1rem; position: relative; z-index: 1;">SaaS Management
+                            Tool</span>
+                        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; position: relative; z-index: 1;">Baker's Hub</h3>
+                        <p
+                            style="margin-bottom: 2rem; position: relative; z-index: 1; font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+                            A specialized mobile application and companion website allowing homebakers to seamlessly manage inventory,
+                            track live orders, and scale their businesses.</p>
+                
+                        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 3rem; position: relative; z-index: 1;">
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">SaaS
+                                Architecture</span>
+                        </div>
+                
+                        <button onclick="openCaseStudy('cs-bakers-hub')" class="btn-text"
+                            style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left; position: relative; z-index: 1;">
+                            Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                
+                    <div class="portfolio-card fade-up glass-card"
+                        style="padding: 3.5rem; display: flex; flex-direction: column; position: relative; overflow: hidden; min-height: 400px; gap: 0;">
+                        <div
+                            style="position: absolute; top: -10%; right: -5%; font-size: 16rem; font-weight: 800; color: var(--brand); opacity: 0.09; line-height: 1; pointer-events: none; user-select: none; font-family: var(--font-mono);">
+                            03</div>
+                
+                        <span class="p-category text-brand" style="margin-bottom: 1rem; position: relative; z-index: 1;">High-Conversion
+                            Web Presence</span>
+                        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; position: relative; z-index: 1;">Barecce</h3>
+                        <p
+                            style="margin-bottom: 2rem; position: relative; z-index: 1; font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+                            A striking digital presence and landing page engineered to capture high-value leads and drive brand growth
+                            for a modern marketing agency.</p>
+                
+                        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 3rem; position: relative; z-index: 1;">
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">UI/UX
+                                Design</span>
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">GSAP
+                                Animations</span>
+                        </div>
+                
+                        <button onclick="openCaseStudy('modal-barecce')" class="btn-text"
+                            style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left; position: relative; z-index: 1;">
+                            Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                
+                    <div class="portfolio-card fade-up glass-card"
+                        style="padding: 3.5rem; display: flex; flex-direction: column; position: relative; overflow: hidden; min-height: 400px; gap: 0;">
+                        <div
+                            style="position: absolute; top: -10%; right: -5%; font-size: 16rem; font-weight: 800; color: var(--brand); opacity: 0.09; line-height: 1; pointer-events: none; user-select: none; font-family: var(--font-mono);">
+                            04</div>
+                
+                        <span class="p-category text-brand" style="margin-bottom: 1rem; position: relative; z-index: 1;">High-Volume
+                            Ticketing Backend</span>
+                        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; position: relative; z-index: 1;">JumpinGo</h3>
+                        <p
+                            style="margin-bottom: 2rem; position: relative; z-index: 1; font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+                            A custom web portal engineered to handle massive, temporary traffic spikes for a traveling jumping park
+                            festival, featuring a heavy backend booking system.</p>
+                
+                        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 3rem; position: relative; z-index: 1;">
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">High-Traffic
+                                Scaling</span>
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Payment
+                                Gateways</span>
+                        </div>
+                
+                        <button onclick="openCaseStudy('modal-jumpingo')" class="btn-text"
+                            style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left; position: relative; z-index: 1;">
+                            Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                
+                    <div class="portfolio-card fade-up glass-card"
+                        style="padding: 3.5rem; display: flex; flex-direction: column; position: relative; overflow: hidden; min-height: 400px; gap: 0;">
+                        <div
+                            style="position: absolute; top: -10%; right: -5%; font-size: 16rem; font-weight: 800; color: var(--brand); opacity: 0.09; line-height: 1; pointer-events: none; user-select: none; font-family: var(--font-mono);">
+                            05</div>
+                
+                        <span class="p-category text-brand" style="margin-bottom: 1rem; position: relative; z-index: 1;">Interactive
+                            Educational Tool</span>
+                        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; position: relative; z-index: 1;">Diamond Fair Price</h3>
+                        <p
+                            style="margin-bottom: 2rem; position: relative; z-index: 1; font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+                            A premium landing page featuring an interactive, step-by-step selection tool designed to guide users through
+                            the complexities of buying a diamond.</p>
+                
+                        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 3rem; position: relative; z-index: 1;">
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Dynamic
+                                Builder Tool</span>
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Luxury
+                                UI/UX</span>
+                        </div>
+                
+                        <button onclick="openCaseStudy('modal-diamond')" class="btn-text"
+                            style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left; position: relative; z-index: 1;">
+                            Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                
+                    <div class="portfolio-card fade-up glass-card"
+                        style="padding: 3.5rem; display: flex; flex-direction: column; position: relative; overflow: hidden; min-height: 400px; gap: 0;">
+                        <div
+                            style="position: absolute; top: -10%; right: -5%; font-size: 16rem; font-weight: 800; color: var(--brand); opacity: 0.09; line-height: 1; pointer-events: none; user-select: none; font-family: var(--font-mono);">
+                            06</div>
+                
+                        <span class="p-category text-brand" style="margin-bottom: 1rem; position: relative; z-index: 1;">Fleet Booking &
+                            Lead Generation</span>
+                        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; position: relative; z-index: 1;">Jirawala Tours & Travels
+                        </h3>
+                        <p
+                            style="margin-bottom: 2rem; position: relative; z-index: 1; font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+                            A custom taxi booking and fare estimation portal designed to capture qualified leads for corporate and
+                            holiday travel.</p>
+                
+                        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 3rem; position: relative; z-index: 1;">
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Estimation
+                                Engine</span>
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Lead
+                                Routing</span>
+                        </div>
+                
+                        <button onclick="openCaseStudy('modal-jirawala')" class="btn-text"
+                            style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left; position: relative; z-index: 1;">
+                            Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                
+                    <div class="portfolio-card fade-up glass-card"
+                        style="padding: 3.5rem; display: flex; flex-direction: column; position: relative; overflow: hidden; min-height: 400px; gap: 0;">
+                        <div
+                            style="position: absolute; top: -10%; right: -5%; font-size: 16rem; font-weight: 800; color: var(--brand); opacity: 0.09; line-height: 1; pointer-events: none; user-select: none; font-family: var(--font-mono);">
+                            07</div>
+                
+                        <span class="p-category text-brand" style="margin-bottom: 1rem; position: relative; z-index: 1;">Enterprise CRM
+                            & Matching Engine</span>
+                        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; position: relative; z-index: 1;">Property Management</h3>
+                        <p
+                            style="margin-bottom: 2rem; position: relative; z-index: 1; font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+                            A comprehensive property portal featuring an intelligent matching algorithm based on 35+ parameters and a
+                            robust 70-point addition module with Role-Based Access Control.</p>
+                
+                        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 3rem; position: relative; z-index: 1;">
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Custom
+                                CRM</span>
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Algorithm
+                                Matching</span>
+                        </div>
+                
+                        <button onclick="openCaseStudy('cs-property-management')" class="btn-text"
+                            style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left; position: relative; z-index: 1;">
+                            Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <!-- <section class="tech-stack-section">
+            <div class="marquee-container stack-marquee">
+                <div class="marquee-content stack-track">
+                    NEXT.JS &nbsp;•&nbsp; REACT NATIVE &nbsp;•&nbsp; FLUTTER &nbsp;•&nbsp; NODE.JS &nbsp;•&nbsp; AWS &nbsp;•&nbsp; MONGODB &nbsp;•&nbsp; TAILWIND &nbsp;•&nbsp; GSAP &nbsp;•&nbsp; TYPESCRIPT &nbsp;•&nbsp;
+                    NEXT.JS &nbsp;•&nbsp; REACT NATIVE &nbsp;•&nbsp; FLUTTER &nbsp;•&nbsp; NODE.JS &nbsp;•&nbsp; AWS &nbsp;•&nbsp; MONGODB &nbsp;•&nbsp; TAILWIND &nbsp;•&nbsp; GSAP &nbsp;•&nbsp; TYPESCRIPT &nbsp;•&nbsp;
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Footer -->
+        <footer class="footer" id="contact" style="position: relative; overflow: hidden; border-top: 1px solid var(--border-color); padding-top: 5rem;">
+            <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 60%; height: 300px; background: var(--brand); filter: blur(150px); opacity: 0.1; z-index: 0; pointer-events: none;"></div>
+            
+            <div class="container" style="position: relative; z-index: 1;">
+                
+                <div class="cta-banner glass-card fade-up" style="margin-bottom: 5rem;">
+                    <h2>Initiate your digital transformation.</h2>
+                    <p>Consult with our lead architects today.</p>
+                    <a href="mailto:hello@dynamiclabz.net" class="btn-primary btn-massive magnetic-btn">hello@dynamiclabz.net</a>
+                </div>
+                
+                <div class="footer-grid fade-up" style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; margin-bottom: 3rem;">
+                    
+                    <div class="f-brand-col">
+                        <img src="assets/images/dynamiclabz/logo.svg" alt="Dynamic Labz" style="height: 40px; margin-bottom: 1.5rem;">
+                        <p style="color: var(--text-muted); line-height: 1.6; max-width: 320px; margin-bottom: 2rem; font-size: 1rem;">Architecting high-performance digital infrastructure for enterprises that demand excellence.</p>
+                        <div class="social-links" style="display: flex; gap: 1rem;">
+                            <a href="https://wa.me/919016971591?text=Hi%20Dynamic%20Labz,%20I%20have%20a%20project%20inquiry..." target="_blank"
+                                class="social-icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/dynamic-labz/" class="social-icon" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.instagram.com/dynamic_labz" class="social-icon" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@Dynamic_Labz" class="social-icon" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="f-links-col">
+                        <h4 style="font-family: var(--font-main); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-main); margin-bottom: 1.5rem;">Navigation</h4>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1.2rem;">
+                            <li><a href="index.html" class="f-link">Home</a></li>
+                            <li><a href="about.html" class="f-link">About Us</a></li>
+                            <li><a href="index.html#services" class="f-link">Services</a></li>
+                            <li><a href="portfolio.html" class="f-link">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="f-links-col">
+                        <h4 style="font-family: var(--font-main); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-main); margin-bottom: 1.5rem;">Connect</h4>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1.2rem;">
+                            <li><a href="mailto:hello@dynamiclabz.net" class="f-link">hello@dynamiclabz.net</a></li>
+                            <li style="color: var(--text-muted); font-size: 0.95rem;">Ahmedabad, Gujarat</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.05);">
+                    <div class="f-copy" style="color: var(--text-muted); font-size: 0.9rem;">© 2026 Dynamic Labz. Engineered natively.</div>
+                    <div class="f-legal" style="display: flex; gap: 2rem;">
+                        <a href="#" class="f-link" style="font-size: 0.85rem;">Privacy Policy</a>
+                        <a href="#" class="f-link" style="font-size: 0.85rem;">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Go-To-Top Button -->
+    <button id="goTopBtn" class="go-top-btn" aria-label="Scroll back to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- The MEWA Modal -->
+    <div class="case-study-overlay" id="cs-the-mewa" data-lenis-prevent>
+        <button class="close-cs-btn" onclick="closeCaseStudy('cs-the-mewa')">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        
+        <div class="container" style="max-width: 1200px;"> 
+            
+            <div class="cs-header fade-up" style="text-align: center; border-bottom: none; padding-bottom: 0;">
+                <span class="p-category text-brand">Case Study</span>
+                <h1 class="hero-title reveal-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">The MEWA</h1>
+                <p class="hero-desc" style="margin: 0 auto;">Fintech Web & App Platform for Financial Advisory</p>
+            </div>
+
+            <div class="cs-content fade-up">
+                
+                <div class="cs-slider-wrapper" style="position: relative; margin-top: 3rem; margin-bottom: 4rem; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); height: 500px; background: var(--surface);">
+                    <div class="cs-slider" style="display: flex; width: 100%; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none;">
+                        
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_The-MEWA/MewaApp-Login.png" alt="The MEWA App Screenshot 1" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_The-MEWA/MewaApp-mix-devices-dark.png" alt="The MEWA App Screenshot 1" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_The-MEWA/MewaApp-FII-DII.png" alt="The MEWA App Screenshot 2" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_The-MEWA/MewaApp-Equity.png" alt="The MEWA App Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_The-MEWA/MewaApp-Commodity.png" alt="The MEWA App Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                    </div>
+                    
+                    <button class="slider-btn prev-cs-btn" style="position: absolute; z-index: 3; top: 50%; left: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="slider-btn next-cs-btn" style="position: absolute; z-index: 3; top: 50%; right: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <div class="cs-grid" style="grid-template-columns: 1fr; gap: 4rem;">
+                    
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Problem Statement</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 500;">Delivering Real-Time Financial Intelligence</h4>
+                        <p class="cs-text">In the fast-paced world of stock market trading, retail investors constantly struggle to find reliable, real-time market recommendations. Existing platforms in the market were either too complex for everyday users, lacked instant alert delivery, or did not offer a secure infrastructure for personalized financial advisory.</p>
+                        <p class="cs-text">Our client required a highly secure, subscription-based ecosystem that could deliver instantaneous stock alerts, manage tiered user memberships seamlessly, and present complex financial data through a clean, intuitive interface across both web and mobile devices.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Our Solution</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 500;">Secure Cross-Platform Fintech Ecosystem</h4>
+                        <p class="cs-text">Dynamic Labz engineered a robust, high-performance web portal and mobile application ecosystem for The MEWA. We focused heavily on backend security and data delivery speed, ensuring that premium subscribers receive real-time stock recommendations without a millisecond of delay.</p>
+                        <p class="cs-text">The platform features a deeply integrated subscription management system, allowing users to seamlessly upgrade tiers and unlock premium advisory features. We implemented strict Role-Based Access Control (RBAC) to protect sensitive financial data, alongside an automated push-notification engine to ensure traders never miss a crucial market movement. The entire UI/UX was designed to inspire trust and simplify the trading advisory experience.</p>
+                    </div>
+
+                    <!-- <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/portfolio/mewa-sec1.jpg" alt="Real-Time Alerts" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 01</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Real-Time Market Alerts</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">Instantaneous push notifications and live feeds for premium stock recommendations.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/portfolio/mewa-sec2.jpg" alt="Subscription Management" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 02</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Subscription Engine</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">Secure payment gateways managing automated billing and tiered access control.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/portfolio/mewa-sec3.jpg" alt="Advisory Dashboard" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 03</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Advisory Dashboard</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">A clean, data-rich interface providing users with in-depth financial insights and portfolio strategies.</p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div>
+                        <h3 class="cs-section-title text-brand">Key Features</h3>
+                        <ul class="pillar-list" style="margin-top: 1.5rem;">
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Instantaneous Alert Delivery:</span> Low-latency push notifications ensuring traders never miss market moves.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Secure Payment Integration:</span> Encrypted processing for recurring subscriptions and premium memberships.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Cross-Platform Architecture:</span> A unified experience across the web portal, iOS, and Android applications.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Admin Command Center:</span> A robust backend allowing the advisory team to broadcast updates instantly to specific user tiers.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Enterprise-Grade Security:</span> Strict data protection protocols safeguarding user identities and financial transactions.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Results</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Scaling Financial Advisory Operations</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Zero-Latency Alert Delivery</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">Successfully architected a data pipeline capable of delivering real-time stock recommendations without delays.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Streamlined User Onboarding</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">Automated the subscription and registration process, drastically reducing drop-offs during sign-up.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Enhanced Retention Rates</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">The premium, user-friendly interface significantly improved customer satisfaction and recurring subscription renewals.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Secure Data Infrastructure</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">Achieved 100% compliance with digital security standards, fostering immense trust with retail investors.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Benefits</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Benefits of The MEWA Platform</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-chart-line text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Predictable Revenue</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Drive consistent business growth through a fully automated subscription management engine.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-face-smile text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Customer Trust</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Build immense credibility with a fast, secure, and professional financial interface.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-mobile-screen text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Omnichannel Access</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Engage users wherever they are via seamlessly synced mobile and web platforms.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-gears text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Operational Efficiency</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Empower the advisory team to manage users and broadcast alerts effortlessly from one dashboard.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem; margin-bottom: 2rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">FAQ</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Frequently Asked Questions</h4>
+                        
+                        <div class="faq-container" style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">How secure is the user data and payment information?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">We utilize enterprise-grade encryption and partner with industry-leading, compliant payment gateways to ensure all financial and personal data is absolutely secure.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Is the platform available on both iOS and Android?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Yes, The MEWA was engineered as a cross-platform solution, ensuring users have a flawless experience whether they are on an iPhone, Android device, or desktop browser.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">How fast are the stock market alerts delivered?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">The architecture is optimized for zero-latency delivery, meaning push notifications hit user devices instantaneously the moment an advisory is published.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card" style="padding: 4rem; text-align: center; border-color: var(--brand); box-shadow: 0 10px 30px var(--brand-glow);">
+                        <div class="quote-icon text-brand" style="margin-bottom: 2rem; display: flex; justify-content: center; opacity: 1;"><i class="fa-solid fa-quote-left" style="font-size: 3rem;"></i></div>
+                        <p style="font-size: 1.25rem; font-style: italic; line-height: 1.8; margin-bottom: 2.5rem; color: white;">"Dynamic Labz built exactly what we envisioned—a blazing fast, highly secure platform that our traders can rely on. Their understanding of backend security and mobile app performance is top-tier. Highly recommended for complex fintech architecture."</p>
+                        <strong class="text-brand" style="font-size: 1.2rem; font-family: var(--font-mono); text-transform: uppercase;">Founder & Lead Advisor</strong>
+                        <span style="display: block; font-size: 1rem; color: var(--text-muted); margin-top: 0.5rem;">The MEWA</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Baker's Hub Modal -->
+    <div class="case-study-overlay" id="cs-bakers-hub" data-lenis-prevent>
+        <button class="close-cs-btn" onclick="closeCaseStudy('cs-bakers-hub')">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        
+        <div class="container" style="max-width: 1200px;"> 
+            
+            <div class="cs-header fade-up" style="text-align: center; border-bottom: none; padding-bottom: 0;">
+                <span class="p-category text-brand">Case Study</span>
+                <h1 class="hero-title reveal-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">Bakers Hub</h1>
+                <p class="hero-desc" style="margin: 0 auto;">Baker's Bookkeeping Mobile App & Management Solution</p>
+            </div>
+
+            <div class="cs-content fade-up">
+                
+                <div class="cs-slider-wrapper" style="position: relative; margin-top: 3rem; margin-bottom: 4rem; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); height: 500px; background: var(--surface);">
+                    <div class="cs-slider" style="display: flex; width: 100%; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none;">
+                        
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_BakersHub/homescreen-app.jpg" alt="Bakers Hub App Screenshot 1" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_BakersHub/download (1).png" alt="Bakers Hub App Screenshot 2" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_BakersHub/expense.png" alt="Bakers Hub App Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_BakersHub/main-web.png" alt="Bakers Hub App Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_BakersHub/mockup.png" alt="Bakers Hub App Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_BakersHub/order.png" alt="Bakers Hub App Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_BakersHub/price_calculator.png" alt="Bakers Hub App Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                    </div>
+                    
+                    <button class="slider-btn prev-cs-btn" style="position: absolute; z-index: 3; top: 50%; left: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="slider-btn next-cs-btn" style="position: absolute; z-index: 3; top: 50%; right: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <div class="cs-grid" style="grid-template-columns: 1fr; gap: 4rem;">
+                    
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Problem Statement</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 500;">Managing Bakery Operations Efficiently</h4>
+                        <p class="cs-text">Bakers juggle multiple responsibilities daily, from tracking sales and purchases to managing deliveries and maintaining ingredient stock. Traditional bookkeeping methods—often involving paper logs or spreadsheets—are time-consuming, prone to errors, and lack automated tracking.</p>
+                        <p class="cs-text">Our client faced significant challenges in keeping financial records organized. They needed a comprehensive bookkeeping app that not only simplified sales tracking but also provided features like delivery notifications, inventory management, task scheduling, and price calculation for their baked products. An all-in-one digital solution was essential to boost efficiency.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Our Solution</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 500;">Custom Baker's Bookkeeping App</h4>
+                        <p class="cs-text">Recognizing the bakery industry's unique needs, Dynamic Labz developed a feature-rich mobile app tailored specifically for bakers. Available on both iOS and Android, the app seamlessly integrates sales tracking, purchase management, reminders, and business insights in one easy-to-use interface.</p>
+                        <p class="cs-text">The app allows bakers to log every sale effortlessly. A built-in delivery notification system alerts them ahead of time, reducing missed deadlines. Additionally, an intuitive price calculator helps determine accurate pricing considering ingredient costs and margins. It also includes shopping list generation and task lists with deadline alerts, fully customized with a baker-friendly color theme.</p>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/project_BakersHub/order.png" alt="Sales Management" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 01</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Sales & Delivery Management</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">Easily log sales and set delivery alerts to ensure no orders are missed.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/project_BakersHub/expense.png" alt="Expense Adder" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 02</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Expense Details Adder</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">Track expenses and create auto-generated shopping lists based on supply needs.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/project_BakersHub/price_calculator.png" alt="Price Calculator" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 03</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Smart Price Calculator</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">Get an accurate cost estimate for each baked product, ensuring optimal pricing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand">Key Features</h3>
+                        <ul class="pillar-list" style="margin-top: 1.5rem;">
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Sales & Delivery Tracking:</span> Record sales and receive automated delivery reminders.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Expense & Purchase Management:</span> Log expenses and generate smart shopping lists.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Price Calculator:</span> Calculate costs based on ingredients, labor, and profit margins.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Task List with Deadline Alerts:</span> Built-in to-do list with notifications for urgent tasks.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Cross-Platform:</span> Fully available and optimized for both iOS and Android devices.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Results</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Transforming Bakery Business Operations</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">80% Faster Order Management</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">With automated sales tracking and delivery reminders, bakers reduced their order processing time by 80%, ensuring seamless customer service.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Significant Reduction in Financial Errors</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">The built-in bookkeeping features eliminated manual calculation errors, improving financial accuracy and reducing discrepancies.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Better Inventory & Purchase Planning</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">With smart shopping lists and purchase tracking, bakers optimized their ingredient procurement, reducing last-minute shortages.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Higher Productivity with Task Automation</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">The task list and deadline notifications kept bakers on top of their daily responsibilities, boosting efficiency.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Increased Profitability & Pricing Accuracy</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">The price calculator ensured precise costing, allowing bakers to set competitive yet profitable prices for their products.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Benefits</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Benefits of Baker's Bookkeeping App</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-chart-line text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Increased Sales</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Boost your revenue with optimized store features and effective marketing strategies.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-face-smile text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Customer Experience</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Provide a smooth and enjoyable shopping experience to retain customers.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-eye text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Brand Visibility</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Increase your brand's online presence with a well-designed and optimized app.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-gears text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Efficient Processes</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Simplify management with efficient inventory and customer support solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem; margin-bottom: 2rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">FAQ</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Frequently Asked Questions</h4>
+                        
+                        <div class="faq-container" style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Is this app only for bakery businesses?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">No, while designed for bakers, the app's features—such as sales tracking, inventory management, and task automation—can be customized for other small businesses as well.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Can I customize the app's theme to match my bakery's brand colors?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Yes! The app supports custom branding, allowing users to adjust colors and interface elements to match their bakery's style.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">How does the delivery reminder feature work?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">When you log a sale with a delivery date, the system automatically notifies you before the due date to ensure timely fulfillment.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Can multiple employees use the app?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Yes, the app supports multiple user roles, allowing bakery staff to collaborate on sales, inventory, and task management.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Is the app available on both Android and iOS?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Absolutely! The app is fully functional on both platforms, ensuring smooth usability across different devices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card" style="padding: 4rem; text-align: center; border-color: var(--brand); box-shadow: 0 10px 30px var(--brand-glow);">
+                        <div class="quote-icon text-brand" style="margin-bottom: 2rem; display: flex; justify-content: center; opacity: 1;"><i class="fa-solid fa-quote-left" style="font-size: 3rem;"></i></div>
+                        <p style="font-size: 1.25rem; font-style: italic; line-height: 1.8; margin-bottom: 2.5rem; color: white;">"Dynamic Labz delivered an outstanding solution tailored to our bakery business. Their bookkeeping app has completely transformed how we track sales, purchases, and deliveries. The automated reminders and pricing calculator alone have saved us countless hours! Their team understood our needs perfectly."</p>
+                        <strong class="text-brand" style="font-size: 1.2rem; font-family: var(--font-mono); text-transform: uppercase;">Snehi Shah</strong>
+                        <span style="display: block; font-size: 1rem; color: var(--text-muted); margin-top: 0.5rem;">BakersHub</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barecce Modal -->
+    <div class="case-study-overlay" id="modal-barecce" data-lenis-prevent>
+        <button class="close-cs-btn" onclick="closeCaseStudy('modal-barecce')">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="container" style="max-width: 1200px;">
+            
+            <div class="cs-header fade-up" style="text-align: center; border-bottom: none; padding-bottom: 0;">
+                <span class="p-category text-brand">Case Study</span>
+                <h1 class="hero-title reveal-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">Barecce</h1>
+                <p class="hero-desc" style="margin: 0 auto; max-width: 800px;">Creative Agency Landing Page & Lead Generation Platform</p>
+            </div>
+
+            <div class="cs-content fade-up">
+                
+                <div class="cs-slider-wrapper" style="position: relative; margin-top: 3rem; margin-bottom: 4rem; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); height: 500px; background: var(--surface);">
+                    <div class="cs-slider" style="display: flex; width: 100%; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none;">
+                        
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Barecee/2.png" alt="Barecce Screenshot" style="max-width: 100%; max-height: 100%;">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Barecee/website1.png" alt="Barecce Screenshot" style="max-width: 100%; max-height: 100%;">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Barecee/website2.png" alt="Barecce Screenshot" style="max-width: 100%; max-height: 100%;">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Barecee/website3.png" alt="Barecce Screenshot" style="max-width: 100%; max-height: 100%;">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Barecee/website4.png" alt="Barecce Screenshot" style="max-width: 100%; max-height: 100%;">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Barecee/website5.png" alt="Barecce Screenshot" style="max-width: 100%; max-height: 100%;">
+                        </div>
+                        
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Barecee/mobile-shot.png" alt="Barecce Screenshot 2" style="max-width: 100%; max-height: 150%; object-fit: contain; border-radius: 12px;">
+                        </div>
+                        
+                    </div>
+                    
+                    <button class="slider-btn prev-cs-btn" style="position: absolute; z-index: 3; top: 50%; left: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="slider-btn next-cs-btn" style="position: absolute; z-index: 3; top: 50%; right: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <div class="cs-grid" style="grid-template-columns: 1fr; gap: 4rem;">
+                    
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">The Goal</h3>
+                        <p class="cs-text">Barecce needed a stunning and super-fast website ready in time for a major corporate event. The main challenge was making sure the site looked highly interactive and animated without slowing down how fast it loaded for visitors.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">How We Built It</h3>
+                        <p class="cs-text">We built a custom, highly interactive website using modern animation tools to create smooth, scroll-based effects. By keeping the code clean and direct, we made sure the design looked exactly like the original vision while loading almost instantly.</p>
+                        <p class="cs-text">Instead of using a complex and hard-to-maintain background server, we connected their contact forms directly to a secure email system. This means customer inquiries go straight to the client without the risk of server crashes or security issues.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">The Launch</h3>
+                        <p class="cs-text">We launched the website on a highly reliable hosting platform, carefully managing the domain setup to ensure it went live right on time without any hiccups. The final result is a website that turns casual visitors into potential clients much better than average sites.</p>
+                    </div>
+
+                    <div style="margin-top: 1rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Benefits</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Why this works for Creative Agencies</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-bolt text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Instant Speeds</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Pages load immediately, keeping visitors happy and helping the site show up higher in search results.</p>
+                            </div>
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-wand-magic-sparkles text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Premium Look and Feel</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Custom animations that perfectly match the agency's high-end brand identity.</p>
+                            </div>
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-envelope-circle-check text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Hassle-Free Contact Forms</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">No confusing server maintenance needed. Customer messages go straight to the agency's inbox instantly.</p>
+                            </div>
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-server text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Zero Hosting Costs</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Set up on a highly reliable system that stays online 24/7 without any monthly hosting fees.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="glass-card" style="padding: 4rem; text-align: center; border-color: var(--brand); box-shadow: 0 10px 30px var(--brand-glow); margin-top: 2rem;">
+                        <div class="quote-icon text-brand" style="margin-bottom: 2rem; display: flex; justify-content: center; opacity: 1;"><i class="fa-solid fa-quote-left" style="font-size: 3rem;"></i></div>
+                        <p style="font-size: 1.25rem; font-style: italic; line-height: 1.8; margin-bottom: 2.5rem; color: white;">"Dynamic Labz delivered a striking digital presence under an incredibly tight deadline. The animations are flawless, and the site speed is phenomenal. It perfectly captures our creative capabilities as an agency."</p>
+                        <strong class="text-brand" style="font-size: 1.2rem; font-family: var(--font-mono); text-transform: uppercase;">Founder & Creative Director</strong>
+                        <span style="display: block; font-size: 1rem; color: var(--text-muted); margin-top: 0.5rem;">Barecce Agency</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JumpinGo Modal -->
+    <div class="case-study-overlay" id="modal-jumpingo" data-lenis-prevent>
+        <button class="close-cs-btn" onclick="closeCaseStudy('modal-jumpingo')">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="container" style="max-width: 1200px;">
+            
+            <div class="cs-header fade-up" style="text-align: center; border-bottom: none; padding-bottom: 0;">
+                <span class="p-category text-brand">Case Study</span>
+                <h1 class="hero-title reveal-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">JumpinGo</h1>
+                <p class="hero-desc" style="margin: 0 auto; max-width: 800px;">High-Volume Event Ticketing & Booking Portal</p>
+            </div>
+
+            <div class="cs-content fade-up">
+                
+                <div class="cs-slider-wrapper" style="position: relative; margin-top: 3rem; margin-bottom: 4rem; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); height: 500px; background: var(--surface);">
+                    <div class="cs-slider" style="display: flex; width: 100%; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none;">
+                        
+                        <!-- Dashboard Screens -->
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-dashboard1.png" alt="JumpinGo Portal Screenshot" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-dashboard2.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-dashboard3.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-dashboard4.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-dashboard5.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <!-- Website Screens -->
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-website1.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-website2.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-website3.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-website4.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-website5.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-website6.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        
+                    </div>
+                    
+                    <button class="slider-btn prev-cs-btn" style="position: absolute; z-index: 3; top: 50%; left: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="slider-btn next-cs-btn" style="position: absolute; z-index: 3; top: 50%; right: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <div class="cs-grid" style="grid-template-columns: 1fr; gap: 4rem;">
+                    
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">The Goal</h3>
+                        <p class="cs-text">JumpinGo, a traveling jumping park festival, experiences massive bursts of website visitors the exact moment tickets go on sale for a new city. Their biggest challenge was keeping the website online during these intense traffic spikes while ensuring families could easily book specific time slots without the system double-booking.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">How We Built It</h3>
+                        <p class="cs-text">Instead of relying on standard website templates that crack under pressure, we built a custom, highly reliable booking system designed specifically to handle thousands of simultaneous users. We streamlined the checkout process, making it incredibly fast for parents to select a date, pick a time slot, and securely pay for their tickets in just a few clicks.</p>
+                        <p class="cs-text">Behind the scenes, we created a smart calendar system that updates ticket availability instantly for everyone browsing, completely eliminating the risk of overselling a time slot.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">The Launch</h3>
+                        <p class="cs-text">During the first major ticket drop on the new platform, the system flawlessly handled the massive surge of excited customers. Thousands of tickets were processed in minutes with zero website crashes or slowdowns, resulting in a completely sold-out event and a stress-free experience for the business owners.</p>
+                    </div>
+
+                    <div style="margin-top: 1rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Benefits</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Why this works for Event Organizers</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-shield-halved text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Crash-Proof Reliability</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">The website stays online and fast, even when thousands of people try to buy tickets at the exact same second.</p>
+                            </div>
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-cart-arrow-down text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Lightning-Fast Checkout</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">A simple, straightforward buying process that gets customers from selecting a time to paying in under a minute.</p>
+                            </div>
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-calendar-check text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Accurate Availability</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Inventory updates instantly, so you never have to deal with the headache of refunding overbooked time slots.</p>
+                            </div>
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-ticket text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Automated Ticketing</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Customers receive their digital tickets and receipts instantly via email, completely hands-off for your team.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem; margin-bottom: 2rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">FAQ</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Frequently Asked Questions</h4>
+                        
+                        <div class="faq-container" style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Can customers buy tickets for different time slots at once?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Yes, the checkout flow allows parents and groups to select multiple time slots or different packages in a single, unified transaction.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">How are the tickets delivered?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">As soon as the payment is confirmed, the system instantly emails a digital ticket containing a unique QR code for quick, secure scanning at the event entrance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card" style="padding: 4rem; text-align: center; border-color: var(--brand); box-shadow: 0 10px 30px var(--brand-glow); margin-top: 2rem;">
+                        <div class="quote-icon text-brand" style="margin-bottom: 2rem; display: flex; justify-content: center; opacity: 1;"><i class="fa-solid fa-quote-left" style="font-size: 3rem;"></i></div>
+                        <p style="font-size: 1.25rem; font-style: italic; line-height: 1.8; margin-bottom: 2.5rem; color: white;">"Dynamic Labz completely changed the game for us. Our old website crashed every time we announced a new city. With this new portal, we sold out our biggest event in record time without a single technical glitch!"</p>
+                        <strong class="text-brand" style="font-size: 1.2rem; font-family: var(--font-mono); text-transform: uppercase;">Event Director</strong>
+                        <span style="display: block; font-size: 1rem; color: var(--text-muted); margin-top: 0.5rem;">JumpinGo Festival</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DiamondFairPrice Modal -->
+    <div class="case-study-overlay" id="modal-diamond" data-lenis-prevent>
+        <button class="close-cs-btn" onclick="closeCaseStudy('modal-diamond')">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="container" style="max-width: 1200px;">
+            
+            <div class="cs-header fade-up" style="text-align: center; border-bottom: none; padding-bottom: 0;">
+                <span class="p-category text-brand">Case Study</span>
+                <h1 class="hero-title reveal-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">Diamond Fair Price</h1>
+                <p class="hero-desc" style="margin: 0 auto; max-width: 800px;">Interactive Educational Platform & Selection Tool</p>
+            </div>
+
+            <div class="cs-content fade-up">
+                
+                <div class="cs-slider-wrapper" style="position: relative; margin-top: 3rem; margin-bottom: 4rem; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); height: 500px; background: var(--surface);">
+                    <div class="cs-slider" style="display: flex; width: 100%; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none;">
+                        
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_DiamondFairPrice/DFP-website1.png" alt="Diamond Fair Price Landing Page" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_DiamondFairPrice/DFP-website2.png" alt="Diamond Fair Price Landing Page" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_DiamondFairPrice/DFP-website3.png" alt="Diamond Fair Price Landing Page" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_DiamondFairPrice/DFP-website4.png" alt="Diamond Fair Price Landing Page" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_DiamondFairPrice/DFP-website5.png" alt="Diamond Fair Price Landing Page" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_DiamondFairPrice/DFP-website6.png" alt="Diamond Fair Price Landing Page" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        
+                    </div>
+                    
+                    <button class="slider-btn prev-cs-btn" style="position: absolute; z-index: 3; top: 50%; left: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="slider-btn next-cs-btn" style="position: absolute; z-index: 3; top: 50%; right: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <div class="cs-grid" style="grid-template-columns: 1fr; gap: 4rem;">
+                    
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">The Goal</h3>
+                        <p class="cs-text">Diamond Fair Price wanted to change how people shop for luxury jewelry online. Instead of overwhelming buyers with heavy walls of text or confusing pricing charts, they needed a beautiful, interactive platform that could educate visitors on the "4Cs" of diamond grading and help them figure out exactly what kind of stone fits their preferences.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">How We Built It</h3>
+                        <p class="cs-text">We built a visually striking landing page paired with a custom, step-by-step selection tool. The interface allows users to seamlessly click through different diamond shapes, adjust the carat weight, and select their desired color, clarity, and cut.</p>
+                        <p class="cs-text">We focused heavily on keeping the design clean and uncluttered, ensuring that the tool felt like a premium luxury experience. The transitions between steps are smooth and intuitive, keeping the user completely focused on finding their perfect diamond without any frustration.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">The Launch</h3>
+                        <p class="cs-text">The final platform serves as a powerful guide for first-time diamond buyers. By turning a complicated educational process into an easy-to-use digital tool, the website keeps visitors highly engaged and builds massive trust in the brand before a purchase is ever made.</p>
+                    </div>
+
+                    <div style="margin-top: 1rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Benefits</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Why this works for Luxury Retailers</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-gem text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Interactive Learning</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Replaces boring text guides with a hands-on tool, making the complicated process of grading diamonds highly visual and fun.</p>
+                            </div>
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-crown text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Premium Aesthetic</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">A sleek, high-end design that perfectly matches the luxury expectations of people buying fine jewelry.</p>
+                            </div>
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-list-check text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Simplified Choices</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Breaks down a stressful buying decision into simple, clear steps so the customer feels confident, not confused.</p>
+                            </div>
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-stopwatch text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Higher Engagement</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Visitors spend significantly more time on the website playing with different diamond combinations, building brand loyalty.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem; margin-bottom: 2rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">FAQ</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Frequently Asked Questions</h4>
+                        
+                        <div class="faq-container" style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Does the tool work well on mobile phones?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Yes, the entire interactive selection process was carefully built to be fully responsive, meaning users get the exact same smooth, premium experience whether they are on a laptop or scrolling on their phone.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Is it possible to add live pricing later?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Absolutely. While the tool currently focuses on education and selection, the way it was built allows for easy future updates, such as connecting it to a live market pricing system if needed.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card" style="padding: 4rem; text-align: center; border-color: var(--brand); box-shadow: 0 10px 30px var(--brand-glow); margin-top: 2rem;">
+                        <div class="quote-icon text-brand" style="margin-bottom: 2rem; display: flex; justify-content: center; opacity: 1;"><i class="fa-solid fa-quote-left" style="font-size: 3rem;"></i></div>
+                        <p style="font-size: 1.25rem; font-style: italic; line-height: 1.8; margin-bottom: 2.5rem; color: white;">"Dynamic Labz created an incredibly elegant solution for what is usually a very confusing process. The interactive tool is beautiful, easy to use, and perfectly captures the high-end luxury feel we wanted for our customers."</p>
+                        <strong class="text-brand" style="font-size: 1.2rem; font-family: var(--font-mono); text-transform: uppercase;">Management Team</strong>
+                        <span style="display: block; font-size: 1rem; color: var(--text-muted); margin-top: 0.5rem;">Diamond Fair Price</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jirawala Tours & Travels Modal -->
+    <div class="case-study-overlay" id="modal-jirawala" data-lenis-prevent>
+        <button class="close-cs-btn" onclick="closeCaseStudy('modal-jirawala')">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="container" style="max-width: 1200px;">
+            
+            <div class="cs-header fade-up" style="text-align: center; border-bottom: none; padding-bottom: 0;">
+                <span class="p-category text-brand">Case Study</span>
+                <h1 class="hero-title reveal-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">Jirawala Tours & Travels</h1>
+                <p class="hero-desc" style="margin: 0 auto; max-width: 800px;">Custom Taxi Booking & Fare Estimation Portal</p>
+            </div>
+
+            <div class="cs-content fade-up">
+                
+                <div class="cs-slider-wrapper" style="position: relative; margin-top: 3rem; margin-bottom: 4rem; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); height: 500px; background: var(--surface);">
+                    <div class="cs-slider" style="display: flex; width: 100%; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none;">
+                        
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Jirawala/website1.png" alt="Jirawala Booking Portal" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Jirawala/website2.png" alt="Jirawala Fare Estimator" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Jirawala/website3.png" alt="Jirawala Fare Estimator" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Jirawala/website4.png" alt="Jirawala Fare Estimator" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Jirawala/website5.png" alt="Jirawala Fare Estimator" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        
+                    </div>
+                    
+                    <button class="slider-btn prev-cs-btn" style="position: absolute; z-index: 3; top: 50%; left: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="slider-btn next-cs-btn" style="position: absolute; z-index: 3; top: 50%; right: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <div class="cs-grid" style="grid-template-columns: 1fr; gap: 4rem;">
+                    
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">The Goal</h3>
+                        <p class="cs-text">Jirawala Tours & Travels needed a digital platform to streamline their taxi rental business for holidays, vacations, and corporate tours. They wanted a system where customers could easily enter their travel destinations, instantly view an estimated cost, and submit a booking request for final confirmation by an executive.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">How We Built It</h3>
+                        <p class="cs-text">We built a sleek, highly professional website focused entirely on the customer booking experience. The core of the platform is a dynamic booking engine. Customers simply input their pickup location, drop-off destination, and preferred vehicle type to get an immediate fare estimate.</p>
+                        <p class="cs-text">Once the user is satisfied with the estimate and submits their itinerary, the system instantly routes all their details to the Jirawala team. This allows a booking executive to quickly follow up and finalize the trip with all the necessary context already in hand.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">The Launch</h3>
+                        <p class="cs-text">The new platform significantly reduced the amount of time the team spent on the phone just answering "how much does it cost?" queries. By providing upfront estimates and a simple digital booking flow, the website dramatically increased the number of serious, highly-qualified booking leads the business receives daily.</p>
+                    </div>
+
+                    <div style="margin-top: 1rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Benefits</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Why this works for Transport Businesses</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-calculator text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Instant Estimates</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Giving customers an immediate price builds trust and keeps them from checking competitors' rates.</p>
+                            </div>
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-filter text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Qualified Leads</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Executives only spend time calling customers who have already seen the price and are ready to book.</p>
+                            </div>
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-car text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Fleet Showcase</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Clearly displays the available vehicles so customers can confidently choose the right size for their group.</p>
+                            </div>
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-mobile-screen text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Mobile-First Booking</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Optimized heavily for smartphones so travelers can easily book a trip while on the go.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem; margin-bottom: 2rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">FAQ</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Frequently Asked Questions</h4>
+                        
+                        <div class="faq-container" style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">How does the website handle multi-city tours?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">The booking form is designed to accommodate complex itineraries, allowing users to detail their full trip so the executive can provide a highly accurate final quote.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Is the fare estimate legally binding?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">No, the website clearly indicates that the generated price is an estimate. This sets the right expectation before the human executive calls to confirm the final booking details.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card" style="padding: 4rem; text-align: center; border-color: var(--brand); box-shadow: 0 10px 30px var(--brand-glow); margin-top: 2rem;">
+                        <div class="quote-icon text-brand" style="margin-bottom: 2rem; display: flex; justify-content: center; opacity: 1;"><i class="fa-solid fa-quote-left" style="font-size: 3rem;"></i></div>
+                        <p style="font-size: 1.25rem; font-style: italic; line-height: 1.8; margin-bottom: 2.5rem; color: white;">"Our new website has completely changed how we handle inquiries. Instead of spending hours on the phone quoting prices, customers now send us complete booking requests with their routes already mapped out. It's incredibly efficient!"</p>
+                        <strong class="text-brand" style="font-size: 1.2rem; font-family: var(--font-mono); text-transform: uppercase;">Management Team</strong>
+                        <span style="display: block; font-size: 1rem; color: var(--text-muted); margin-top: 0.5rem;">Jirawala Tours & Travels</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Property Management Modal -->
+    <div class="case-study-overlay" id="cs-property-management" data-lenis-prevent>
+        <button class="close-cs-btn" onclick="closeCaseStudy('cs-property-management')">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        
+        <div class="container" style="max-width: 1200px;"> 
+            
+            <div class="cs-header fade-up" style="text-align: center; border-bottom: none; padding-bottom: 0;">
+                <span class="p-category text-brand">Case Study</span>
+                <h1 class="hero-title reveal-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">Property Management</h1>
+                <p class="hero-desc" style="margin: 0 auto;">Enhancing In-House Property Selection & Visit Planning</p>
+            </div>
+
+            <div class="cs-content fade-up">
+                
+                <div class="cs-slider-wrapper" style="position: relative; margin-top: 3rem; margin-bottom: 4rem; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); height: 500px; background: var(--surface);">
+                    
+                    <div class="cs-slider" style="display: flex; width: 100%; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none;">
+                        
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Property-Managment/ssc-inquiry-form.png" alt="Raw Screenshot 1" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Property-Managment/ssc-property-detail-design.png" alt="Raw Screenshot 2" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Property-Managment/ssc-property-detail-design_1.png" alt="Raw Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Property-Managment/ssc-property-detail-design_2.png" alt="Raw Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Property-Managment/ssc-property-detail-design_3.png" alt="Raw Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Property-Managment/ssc-property-detail-design_4.png" alt="Raw Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        
+                    </div>
+                    
+                    <button class="slider-btn prev-cs-btn" style="position: absolute; z-index: 3; top: 50%; left: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="slider-btn next-cs-btn" style="position: absolute; z-index: 3; top: 50%; right: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <div class="cs-grid" style="grid-template-columns: 1fr; gap: 4rem;">
+                    
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Problem Statement</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 500;">Enhancing In-House Property Selection Process</h4>
+                        <p class="cs-text">The client, a leading property broker, faced significant challenges in managing property recommendations for walk-in clients. Their existing process was entirely manual, requiring employees to verbally gather client requirements and manually search through property records. This not only consumed valuable time but also led to inconsistencies and errors in capturing client preferences.</p>
+                        <p class="cs-text">Additionally, the manual system made it difficult to plan property visits effectively. Coordinating schedules between clients, property owners, and brokers required extensive back-and-forth communication, causing delays and confusion. The client needed a comprehensive solution to streamline these processes, improve data accuracy, and enhance the overall client experience.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Our Solution</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 500;">Property Listing & Visit Planning Portal</h4>
+                        <p class="cs-text">We developed an in-depth property listing portal tailored for the client's in-house operations. This portal streamlines the entire property selection process, starting with an extensive client requirement form comprising over 35+ questions. Once submitted, the system applies intelligent filters based on primary criteria—such as identifying properties within a 2.5 km radius.</p>
+                        <p class="cs-text">The portal then presents the top 15 property matches with a visually appealing UI/UX design. Clients can shortlist properties they find interesting, moving seamlessly to the visit planner. Notifications are automatically sent to property owners, ensuring smooth coordination.</p>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/project_Property-Managment/ssc-inquiry-form.png" alt="Inquiry Form" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 01</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Property Inquiry Form</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">A dynamic, user-friendly form capturing detailed client preferences effortlessly.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/project_Property-Managment/ssc-property-detail-design.png" alt="Match Results" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 02</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Property Match Results</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">A visually appealing dashboard showcasing top property matches with detailed insights.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/project_Property-Managment/ssc-visit-plan_with_time.png" alt="Visit Planner" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 03</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Visit Planner</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">Simplified interface for scheduling property visits, enhancing client convenience and engagement.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand">Key Features</h3>
+                        <ul class="pillar-list" style="margin-top: 1.5rem;">
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Advanced Client Requirement Form:</span> Over 35+ detailed fields capturing precise preferences.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Intelligent Matching Algorithm:</span> Prioritizes top 15 properties based on location and parameters.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Seamless Visit Planning:</span> Effortless scheduling with automated notifications to owners.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Robust Management Module:</span> Simplified property addition with over 70+ data points and RBAC.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Results</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Achieving Operational Excellence</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Streamlined Onboarding</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">Reduced manual effort with an automated, in-depth client requirement form, enhancing efficiency.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);"> Improved Property Match Accuracy</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">The intelligent algorithm ensures high-quality matches, aligning perfectly with client preferences.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);"> Enhanced Client Experience</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">Engaging UI/UX fosters better client interaction, leading to quicker and more confident decisions.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Optimized Visit Planning</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">Simplified scheduling process improves coordination between clients, brokers, and property owners.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Efficient Data Management</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">Secure property database with comprehensive details, improving internal data handling and accessibility.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Benefits</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Benefits of Property Management Portal</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-chart-line text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Increased Sales</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Boost your revenue with optimized portal features and effective matching strategies.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-face-smile text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Customer Experience</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Provide a smooth and enjoyable property selection experience to retain clients.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-eye text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Brand Visibility</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Increase your firm's professional presence with a well-designed digital infrastructure.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-gears text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Efficient Processes</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Simplify portal management with efficient property databases and visit planners.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem; margin-bottom: 2rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">FAQ</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Frequently Asked Questions</h4>
+                        
+                        <div class="faq-container" style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Can the portal be customized to fit different business models?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Yes, the portal is highly customizable to cater to unique business requirements across the real estate industry.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">How secure is the data within the portal?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">We implement role-based access control and secure database practices to ensure data integrity and confidentiality.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Is it possible to integrate this portal with existing CRM systems?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Yes, the portal can be integrated with most CRM platforms for seamless data synchronization.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Can new properties be added easily by employees?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Absolutely. The property management module includes a user-friendly form with over 70+ data fields for comprehensive listings.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Does the system support multi-user access with different roles?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Yes, the portal supports multiple user roles, providing specific access permissions based on employee hierarchy.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card" style="padding: 4rem; text-align: center; border-color: var(--brand); box-shadow: 0 10px 30px var(--brand-glow);">
+                        <div class="quote-icon text-brand" style="margin-bottom: 2rem; display: flex; justify-content: center; opacity: 1;"><i class="fa-solid fa-quote-left" style="font-size: 3rem;"></i></div>
+                        <p style="font-size: 1.25rem; font-style: italic; line-height: 1.8; margin-bottom: 2.5rem; color: white;">"We had a seamless experience working with Divyam from Dynamic Labz. His commitment to delivering on time and a thorough understanding of our project requirements and its technical nuances made the entire process stress-free."</p>
+                        <strong class="text-brand" style="font-size: 1.2rem; font-family: var(--font-mono); text-transform: uppercase;">Pratik Thakkar</strong>
+                        <span style="display: block; font-size: 1rem; color: var(--text-muted); margin-top: 0.5rem;">Square Second Consultants</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

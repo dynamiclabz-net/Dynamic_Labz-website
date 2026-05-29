@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Business Automation & RPA Solutions | Dynamic Labz</title>
+    
+    <meta name="description" content="Streamline heavy backend processes with Dynamic Labz. We build custom Python RPA scripts, SAP architecture, and workflow automations to save time and scale.">
+    <meta name="keywords" content="Business Automation, SAP Integration, RPA Solutions, Workflow Automation, Python Automation Scripts, Tech Agency">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Enterprise Business Automation & RPA Solutions | Dynamic Labz">
+    <meta property="og:description" content="Streamline heavy backend processes with Dynamic Labz. We build custom Python RPA scripts, SAP architecture, and workflow automations to save time and scale.">
+    <meta property="og:url" content="https://www.dynamiclabz.net/automation.html">
+    <meta property="og:image" content="assets/images/dynamiclabz/og-automation.jpg">
+    
+    <link rel="icon" type="image/png" href="assets/images/dynamiclabz/icon-1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <noscript>
+        <style>
+            #preloader { display: none !important; }
+            body { overflow: visible !important; }
+        </style>
+    </noscript>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <!-- <div id="preloader">
+        <div class="preloader-content">
+            
+            <svg class="geom-logo" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(0, 1)">
+                    <path class="gem-line" d="M3.54686 30.6596C3.91779 31.0771 4.10325 31.6105 4.08007 32.1207C4.05689 32.6541 3.84824 33.1643 3.43095 33.5354C2.59636 34.3007 1.3213 34.2544 0.556262 33.4194C0.185335 33.002 -0.000128871 32.4686 0.0230541 31.9583C0.046237 31.4481 0.254883 30.9147 0.672176 30.5436C1.48358 29.7551 2.78182 29.8247 3.54686 30.6596Z"/>
+                    <path class="gem-line" d="M32.1545 17.765C32.1545 17.8114 32.1313 17.8809 32.1313 17.9273C32.1082 18.3912 32.2009 18.855 32.3864 19.2725L26.0806 25.0936L19.7748 30.9148C19.3112 30.6597 18.8012 30.5437 18.2911 30.5437L11.4753 10.6683C11.7535 10.5059 12.0317 10.3204 12.2867 10.0885C12.5418 9.85653 12.7504 9.60142 12.9127 9.32312L32.1545 17.765Z"/>
+                    <path class="gem-line" d="M5.72617 33.2574L15.4398 34.1619C15.5557 34.649 15.7876 35.1128 16.1585 35.5071C16.5294 35.9245 16.9931 36.1796 17.4799 36.342L17.6886 44.1113L17.7813 47.4973C17.5031 47.6133 17.2249 47.7756 16.9931 47.9611L4.84521 34.7649C5.23932 34.3243 5.5407 33.8141 5.72617 33.2574Z"/>
+                    <path class="gem-line" d="M21.2588 33.8143C21.3052 33.304 21.2356 32.7474 21.0038 32.2604L33.6385 20.618C34.1021 20.8732 34.6354 21.0123 35.1454 20.9891L42.448 41.4908C42.1698 41.6299 41.9148 41.8155 41.683 42.0474C41.4511 42.2561 41.2425 42.5112 41.0802 42.7663L21.2588 33.8143Z"/>
+                    <path class="gem-line" d="M31.7374 4.68457C32.317 5.31075 33.0588 5.7282 33.8934 5.86735V6.19204L34.1021 15.2369C33.7311 15.376 33.3834 15.5616 33.082 15.8399C33.0125 15.9095 32.9429 15.979 32.8734 16.0486L26.2894 13.1728L13.5156 7.58356C13.5156 7.51398 13.5388 7.4676 13.5388 7.39802C13.5388 7.14291 13.5388 6.86461 13.4924 6.6095L30.7405 2.62048C30.8565 3.38582 31.2042 4.10477 31.7374 4.68457Z"/>
+                    <path class="gem-line" d="M44.488 41.0266C44.4185 41.0266 44.3258 41.0266 44.2562 41.0266L36.9072 20.3858C36.9768 20.3394 37.0463 20.293 37.0927 20.2235C37.3941 19.9452 37.6027 19.6437 37.765 19.2958L47.5946 20.5018C47.6177 21.4526 47.9655 22.3339 48.6146 23.0297C49.1015 23.5631 49.7042 23.9342 50.3765 24.1197L45.2067 41.1194C44.9981 41.073 44.7431 41.0266 44.488 41.0266Z"/>
+                    <path class="gem-line" d="M35.9799 3.5486C35.1453 4.31393 33.8702 4.26755 33.1052 3.43264C32.7343 3.01518 32.5488 2.48177 32.572 1.97155C32.5952 1.46132 32.8038 0.92791 33.2211 0.556839C34.0557 -0.208495 35.3308 -0.162111 36.0958 0.672799C36.4667 1.09025 36.6522 1.62367 36.629 2.13389C36.6058 2.64411 36.374 3.15434 35.9799 3.5486Z"/>
+                    <path class="gem-line" d="M42.3088 44.8298C42.332 44.2964 42.5406 43.7862 42.9579 43.4151C43.7925 42.6498 45.0676 42.6962 45.8326 43.5311C46.2035 43.9485 46.389 44.4819 46.3658 44.9922C46.3426 45.5256 46.134 46.0358 45.7167 46.4069C44.8821 47.1722 43.607 47.1258 42.842 46.2909C42.4479 45.8735 42.2856 45.34 42.3088 44.8298Z"/>
+                    
+                    <path class="gem-line gem-line-faded" d="M9.50492 11.1326C9.57447 11.1326 9.62083 11.1326 9.69038 11.1326L16.5525 31.124C16.483 31.1704 16.4134 31.24 16.3207 31.3095C16.0193 31.5878 15.7643 31.9357 15.602 32.3068L5.86519 31.4023C5.74928 30.6602 5.40154 29.9644 4.89151 29.3846C4.38149 28.8512 3.75555 28.4569 3.06006 28.2714L8.69351 10.9934C8.94853 11.0862 9.22672 11.1326 9.50492 11.1326Z"/>
+                    <path class="gem-line gem-line-faded" d="M48.8464 17.5335C48.4755 17.8582 48.1973 18.2525 47.9886 18.6931L37.9736 17.464C37.8809 16.9537 37.6259 16.4435 37.2549 16.0261C36.884 15.6318 36.4203 15.3535 35.9335 15.1911L35.7249 5.86798V5.75202C36.2812 5.58968 36.7913 5.28818 37.2086 4.89392L48.8464 17.5335Z"/>
+                    <path class="gem-line gem-line-faded" d="M21.2585 48.262C20.7949 47.775 20.2153 47.4503 19.6125 47.3112L19.3344 36.2718C19.7053 36.1326 20.053 35.9471 20.3544 35.6688C20.4239 35.6224 20.4703 35.5529 20.5399 35.4833L40.5004 44.5049C40.5004 44.5745 40.4772 44.6673 40.4772 44.7369C40.4772 44.992 40.4772 45.2471 40.5236 45.5022L22.0004 49.6304C21.8613 49.1201 21.6295 48.6563 21.2585 48.262Z"/>
+                    <path class="gem-line gem-line-faded" d="M11.6842 7.32896C11.661 7.86237 11.4524 8.3726 11.0351 8.74367C10.2005 9.509 8.92542 9.46262 8.16039 8.62771C7.78946 8.21025 7.604 7.67684 7.62718 7.16662C7.65036 6.6332 7.85901 6.12298 8.2763 5.75191C9.11089 4.98657 10.3859 5.03296 11.151 5.86787C11.5451 6.28532 11.7074 6.81874 11.6842 7.32896Z"/>
+                    <path class="gem-line gem-line-faded" d="M49.9823 21.7775C49.6114 21.36 49.4259 20.8266 49.4491 20.3164C49.4723 19.783 49.6809 19.2728 50.0982 18.9017C50.9328 18.1364 52.2078 18.1827 52.9729 19.0176C53.3438 19.4351 53.5293 19.9685 53.5061 20.4787C53.4829 21.0122 53.2743 21.5224 52.857 21.8934C52.0456 22.6588 50.7473 22.6124 49.9823 21.7775Z"/>
+                    <path class="gem-line gem-line-faded" d="M17.5495 48.8886C18.3841 48.1233 19.6591 48.1697 20.4242 49.0046C20.7951 49.422 20.9806 49.9555 20.9574 50.4657C20.9342 50.9759 20.7256 51.5093 20.3083 51.8804C19.4737 52.6457 18.1986 52.5993 17.4336 51.7644C17.0627 51.347 16.8772 50.8136 16.9004 50.3033C16.9236 49.7931 17.1554 49.2597 17.5495 48.8886Z"/>
+                </g>
+            </svg>
+            
+            <div class="loading-text">ARCHITECTING SYSTEM <span id="progress-text" class="text-brand">0%</span></div>
+        </div>
+    </div> -->
+
+    <div id="page-transition"></div>
+
+    <canvas id="quantum-network"></canvas>
+    <div class="grid-floor"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-wrap">
+            <div class="brand">
+                <a href="index.html"><img src="assets/images/dynamiclabz/logo.svg" alt="Dynamic Labz Mark" class="nav-mark"></a>
+            </div>
+            
+            <div class="nav-links">
+                <div class="nav-dropdown">
+                    <a href="index.html" style="cursor: pointer;">Home <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px; opacity: 0.7;"></i></a>
+                    
+                    <div class="dropdown-menu">
+                        <a href="index.html#work">Case Studies</a>
+                        <a href="index.html#process">Deployment Protocol</a>
+                        <a href="index.html#testimonials">Success Stories</a>
+                    </div>
+                </div>
+
+                <div class="nav-dropdown">
+                    <a href="index.html#services" style="cursor: pointer;">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px; opacity: 0.7;"></i></a>
+                    
+                    <div class="dropdown-menu">
+                        <a href="web-app.html">Web & App Development</a>
+                        <a href="automation.html">Business Automation</a>
+                        <a href="ai-chatbot.html">AI & Chatbots</a>
+                        <a href="marketing.html">Marketing & SEO Services</a>
+                    </div>
+                </div>
+                
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+            </div>
+            
+            <a href="contact.html" class="btn-glass desktop-cta" style="font-size: 1.1rem;">Initiate Project</a>
+
+            <button class="mobile-menu-toggle" aria-label="Open mobile menu">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+        </div>
+    </nav>
+
+    <!-- Navbar - Mobile -->
+    <div class="mobile-menu-overlay" id="mobile-dropdown">
+        <div class="mobile-menu-content">
+            <a href="index.html" class="m-link" style="color: var(--brand);">Home</a>
+            <a href="index.html#work" class="m-link" style="font-size: 0.95rem; opacity: 0.8; padding-left: 2rem;">— Case Studies</a>
+            <a href="index.html#process" class="m-link" style="font-size: 0.95rem; opacity: 0.8; padding-left: 2rem;">— Deployment Protocol</a>
+            <a href="index.html#testimonials" class="m-link" style="font-size: 0.95rem; opacity: 0.8; padding-left: 2rem;">— Success Stories</a>
+
+            <a href="index.html#services" class="m-link" style="color: var(--brand);">Services</a>
+            <a href="web-app.html" class="m-link" style="font-size: 0.95rem; opacity: 0.8; padding-left: 2rem;">— Web & App Development</a>
+            <a href="automation.html" class="m-link" style="font-size: 0.95rem; opacity: 0.8; padding-left: 2rem;">— Business Automation</a>
+            <a href="ai-chatbot.html" class="m-link" style="font-size: 0.95rem; opacity: 0.8; padding-left: 2rem;">— AI & Chatbots</a>
+            <a href="marketing.html" class="m-link" style="font-size: 0.95rem; opacity: 0.8; padding-left: 2rem;">— Marketing & SEO Services</a>
+
+            <a href="about.html" class="m-link">About Us</a>
+            <a href="portfolio.html" class="m-link">Portfolio</a>
+            <a href="contact.html" class="btn-primary" style="margin-top: 1rem; padding: 0.8rem; font-size: 1rem; text-align: center; border-radius: 8px;">Initiate Project</a>
+        </div>
+    </div>
+
+    <main id="smooth-wrapper">
+        
+        <!-- Hero Section -->
+        <section class="page-header">
+            <div class="container hero-inner text-center">
+                <div class="pill-badge fade-up" style="margin: 0 auto 2rem auto;">
+                    <span class="live-dot"></span> <span style="letter-spacing: 1px;">SERVICES / BUSINESS AUTOMATION</span>
+                </div>
+                <h1 class="hero-title reveal-text" style="text-align: center; width: 100%; max-width: 1000px; margin: 0 auto;">
+                    Intelligent <span class="text-brand">Workflows.</span>
+                </h1>
+                <p class="hero-desc fade-up" style="margin: 2rem auto 0 auto; text-align: center;">
+                    We streamline heavy backend processes, deploy intelligent AI validation systems, and integrate automated scripts to achieve absolute operational precision.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Detail Section -->
+        <section class="services-detail" style="padding: 5rem 0 8rem 0;">
+            <div class="container">
+                <div class="glass-grid">
+                    
+                    <div class="glass-card fade-up">
+                        <i class="fa-solid fa-brain s-icon"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">AI Validation Systems</h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">Replacing manual data entry with machine speed. We build custom AI models to automatically read, validate, and process complex enterprise documents.</p>
+                        <ul class="pillar-list" style="margin: 0;">
+                            <li><i class="fa-solid fa-check"></i> OCR Data Extraction</li>
+                            <li><i class="fa-solid fa-check"></i> Automated Compliance Checks</li>
+                            <li><i class="fa-solid fa-check"></i> Smart Error Flagging</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="glass-card fade-up" style="transition-delay: 0.1s;">
+                        <i class="fa-solid fa-network-wired s-icon"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">SAP & ERP Automation</h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">Seamlessly sync your massive data pools. We architect custom scripts that automatically transfer and format data between isolated enterprise platforms.</p>
+                        <ul class="pillar-list" style="margin: 0;">
+                            <li><i class="fa-solid fa-check"></i> SAP Architecture Integration</li>
+                            <li><i class="fa-solid fa-check"></i> Third-Party API Syncing</li>
+                            <li><i class="fa-solid fa-check"></i> Real-Time Database Updating</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card fade-up" style="transition-delay: 0.2s;">
+                        <i class="fa-solid fa-file-excel s-icon"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Custom Python RPA</h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">Robotic Process Automation tailored to your exact workflows. We eliminate repetitive human tasks through high-speed, flawless script execution.</p>
+                        <ul class="pillar-list" style="margin: 0;">
+                            <li><i class="fa-solid fa-check"></i> Advanced Excel Automation</li>
+                            <li><i class="fa-solid fa-check"></i> Automated Report Generation</li>
+                            <li><i class="fa-solid fa-check"></i> Scheduled Data Scraping</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio-section" style="padding: 0 0 8rem 0; border-top: 1px solid var(--border-color); padding-top: 8rem;">
+            <div class="container">
+                <div class="section-header-row fade-up">
+                    <div class="pill-badge"><span class="live-dot"></span> <span>PROVEN CAPABILITIES</span></div>
+                    <h2 class="section-heading">Deployed Automations</h2>
+                    <p class="hero-desc">Real-world workflow systems engineered by Dynamic Labz.</p>
+                </div>
+                
+                <!-- <div class="portfolio-grid" style="grid-template-columns: repeat(2, 1fr); gap: 3rem;">
+                    
+                    AI-Powered Document Validation Project
+                    <div class="portfolio-card fade-up glass-card" style="grid-column: 1 / -1; display: flex; flex-direction: row; padding: 0; overflow: hidden; gap: 0;">
+                        <div class="p-card-content" style="flex: 1; padding: 4rem; justify-content: center;">
+                            <span class="p-category text-brand">Enterprise AI Automation</span>
+                            <h3 style="font-size: 2.2rem; margin-bottom: 1rem;">AI-Powered Document Validation</h3>
+                            <p style="font-size: 1.05rem; margin-bottom: 2rem;">An intelligent, automated workflow system that utilizes advanced AI to instantly read, validate, and process complex corporate documents, eliminating thousands of hours of manual data entry.</p>
+                            <button onclick="openCaseStudy('cs-ai-validation')" class="btn-text" style="background: none; border: none; font-size: 1.1rem; cursor: pointer; padding: 0; font-family: var(--font-main);">
+                                Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div class="p-card-image" style="flex: 1; height: auto; border-left: 1px solid var(--border-color); border-bottom: none;">
+                            <img src="assets/images/portfolio/ai-document-placeholder.jpg" alt="AI Document Validation System">
+                        </div>
+                    </div>
+
+                </div> -->
+
+                <div class="portfolio-grid" style="grid-template-columns: repeat(2, 1fr); gap: 3rem;">
+                
+                    <div class="portfolio-card fade-up glass-card"
+                        style="padding: 3.5rem; display: flex; flex-direction: column; position: relative; overflow: hidden; min-height: 400px; gap: 0;">
+                        <div
+                            style="position: absolute; top: -10%; right: -5%; font-size: 16rem; font-weight: 800; color: var(--brand); opacity: 0.09; line-height: 1; pointer-events: none; user-select: none; font-family: var(--font-mono);">
+                            01</div>
+                
+                        <span class="p-category text-brand" style="margin-bottom: 1rem; position: relative; z-index: 1;">Enterprise AI
+                            Automation</span>
+                        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; position: relative; z-index: 1;">AI-Powered Document
+                            Validation</h3>
+                        <p
+                            style="margin-bottom: 2rem; position: relative; z-index: 1; font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+                            An intelligent, automated workflow system that utilizes advanced AI to instantly read, validate, and process
+                            complex corporate documents, eliminating thousands of hours of manual data entry.</p>
+                
+                        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 3rem; position: relative; z-index: 1;">
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Python
+                                Scripts</span>
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">OCR
+                                Extraction</span>
+                            <span
+                                style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Machine
+                                Learning</span>
+                        </div>
+                
+                        <button onclick="openCaseStudy('cs-ai-validation')" class="btn-text"
+                            style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left; position: relative; z-index: 1;">
+                            Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <!-- <section class="tech-stack-section">
+            <div class="marquee-container stack-marquee">
+                <div class="marquee-content stack-track">
+                    PYTHON &nbsp;•&nbsp; OPENAI API &nbsp;•&nbsp; PANDAS &nbsp;•&nbsp; TENSORFLOW &nbsp;•&nbsp; AWS &nbsp;•&nbsp; SAP ERP &nbsp;•&nbsp; NODE.JS &nbsp;•&nbsp; SELENIUM &nbsp;•&nbsp; REST API &nbsp;•&nbsp;
+                    PYTHON &nbsp;•&nbsp; OPENAI API &nbsp;•&nbsp; PANDAS &nbsp;•&nbsp; TENSORFLOW &nbsp;•&nbsp; AWS &nbsp;•&nbsp; SAP ERP &nbsp;•&nbsp; NODE.JS &nbsp;•&nbsp; SELENIUM &nbsp;•&nbsp; REST API &nbsp;•&nbsp;
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Footer -->
+        <footer class="footer" id="contact" style="position: relative; overflow: hidden; border-top: 1px solid var(--border-color); padding-top: 5rem;">
+            <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 60%; height: 300px; background: var(--brand); filter: blur(150px); opacity: 0.1; z-index: 0; pointer-events: none;"></div>
+            
+            <div class="container" style="position: relative; z-index: 1;">
+                
+                <div class="cta-banner glass-card fade-up" style="margin-bottom: 5rem;">
+                    <h2>Initiate your digital transformation.</h2>
+                    <p>Consult with our lead architects today.</p>
+                    <a href="mailto:hello@dynamiclabz.net" class="btn-primary btn-massive magnetic-btn">hello@dynamiclabz.net</a>
+                </div>
+                
+                <div class="footer-grid fade-up" style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; margin-bottom: 3rem;">
+                    
+                    <div class="f-brand-col">
+                        <img src="assets/images/dynamiclabz/logo.svg" alt="Dynamic Labz" style="height: 40px; margin-bottom: 1.5rem;">
+                        <p style="color: var(--text-muted); line-height: 1.6; max-width: 320px; margin-bottom: 2rem; font-size: 1rem;">Architecting high-performance digital infrastructure for enterprises that demand excellence.</p>
+                        <div class="social-links" style="display: flex; gap: 1rem;">
+                            <a href="https://wa.me/919016971591?text=Hi%20Dynamic%20Labz,%20I%20have%20a%20project%20inquiry..." target="_blank"
+                                class="social-icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/dynamic-labz/" class="social-icon" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.instagram.com/dynamic_labz" class="social-icon" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@Dynamic_Labz" class="social-icon" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="f-links-col">
+                        <h4 style="font-family: var(--font-main); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-main); margin-bottom: 1.5rem;">Navigation</h4>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1.2rem;">
+                            <li><a href="index.html" class="f-link">Home</a></li>
+                            <li><a href="about.html" class="f-link">About Us</a></li>
+                            <li><a href="index.html#services" class="f-link">Services</a></li>
+                            <li><a href="portfolio.html" class="f-link">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="f-links-col">
+                        <h4 style="font-family: var(--font-main); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-main); margin-bottom: 1.5rem;">Connect</h4>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1.2rem;">
+                            <li><a href="mailto:hello@dynamiclabz.net" class="f-link">hello@dynamiclabz.net</a></li>
+                            <li style="color: var(--text-muted); font-size: 0.95rem;">Ahmedabad, Gujarat</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.05);">
+                    <div class="f-copy" style="color: var(--text-muted); font-size: 0.9rem;">© 2026 Dynamic Labz. Engineered natively.</div>
+                    <div class="f-legal" style="display: flex; gap: 2rem;">
+                        <a href="#" class="f-link" style="font-size: 0.85rem;">Privacy Policy</a>
+                        <a href="#" class="f-link" style="font-size: 0.85rem;">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Go-To-Top Button -->
+    <button id="goTopBtn" class="go-top-btn" aria-label="Scroll back to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- AI Document Modal -->
+    <div class="case-study-overlay" id="cs-ai-validation" data-lenis-prevent>
+        <button class="close-cs-btn" onclick="closeCaseStudy('cs-ai-validation')">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        
+        <div class="container" style="max-width: 1200px;"> 
+            
+            <div class="cs-header fade-up" style="text-align: center; border-bottom: none; padding-bottom: 0;">
+                <span class="p-category text-brand">Case Study</span>
+                <h1 class="hero-title reveal-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">AI Document Validation</h1>
+                <p class="hero-desc" style="margin: 0 auto;">Enterprise AI Automation System</p>
+            </div>
+
+            <div class="cs-content fade-up">
+                
+                <div class="cs-slider-wrapper" style="position: relative; margin-top: 3rem; margin-bottom: 4rem; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); height: 500px; background: var(--surface);">
+                    <div class="cs-slider" style="display: flex; width: 100%; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none;">
+                        
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/portfolio/ai-slide1.jpg" alt="AI Dashboard Screenshot 1" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/portfolio/ai-slide2.jpg" alt="AI Dashboard Screenshot 2" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/portfolio/ai-slide3.jpg" alt="AI Dashboard Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                    </div>
+                    
+                    <button class="slider-btn prev-cs-btn" style="position: absolute; z-index: 3; top: 50%; left: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="slider-btn next-cs-btn" style="position: absolute; z-index: 3; top: 50%; right: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <div class="cs-grid" style="grid-template-columns: 1fr; gap: 4rem;">
+                    
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Problem Statement</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 500;">Manual Validation Challenges in MedTech</h4>
+                        <p class="cs-text">A leading MedTech firm in the UK was facing significant inefficiencies in processing and validating crucial data from 25+ police forces. Their workflow required manually reviewing PDF and DOCX files containing essential field information, ensuring compliance and accuracy across 15+ key parameters. This process was time-consuming, prone to human error, and lacked scalability.</p>
+                        <p class="cs-text">With hundreds of documents arriving daily, their team struggled to maintain speed and accuracy. Delays in validation impacted decision-making and operational efficiency, while errors led to compliance risks. The company needed an intelligent, automated solution to streamline data validation, reduce turnaround time, and enhance precision.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Our Solution</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 500;">AI-Powered Document Validation System</h4>
+                        <p class="cs-text">To tackle the inefficiencies in manual validation, we developed a state-of-the-art AI-powered document validation system designed specifically for the MedTech firm. This intelligent system automates the extraction, analysis, and validation of key fields from incoming documents, ensuring unmatched accuracy and efficiency. Our AI model was meticulously trained on real-world police reports to recognize diverse formats, handle inconsistencies, and validate critical data points seamlessly.</p>
+                        <p class="cs-text">The system operates in three core stages: Document Parsing, AI-Driven Validation, and Structured Output Generation. First, incoming PDFs and DOCX files from 25+ police forces are scanned and processed using advanced OCR and NLP techniques. Once extracted, each of the 15+ key fields undergoes rigorous validation using AI algorithms that detect missing or incomplete information. The final output is then converted into a structured JSON format, enabling seamless integration with the client's existing infrastructure.</p>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/portfolio/ai-sec1.jpg" alt="Document Upload" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 01</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Document Upload & Processing</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">AI instantly scans and extracts data from police reports.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/portfolio/ai-sec2.jpg" alt="Validation Check" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 02</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Validation & Compliance Check</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">Automated field validation ensures all required data is complete.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/portfolio/ai-sec3.jpg" alt="JSON Output" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 03</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">JSON Output Generation</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">Clean, structured JSON is created for seamless system integration.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand">Key Features</h3>
+                        <ul class="pillar-list" style="margin-top: 1.5rem;">
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Automated Document Parsing:</span> Instantly reads and extracts key data from police reports, eliminating manual entry.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">AI-Powered Field Validation:</span> Machine learning algorithms ensure critical fields are accurately validated, flagging missing data.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Seamless JSON Output:</span> Delivers a well-formatted JSON response, making it easier to integrate with existing MedTech systems.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Drastic Turnaround Reduction:</span> What used to take hours of manual validation is now completed in seconds.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Scalable & Future-Proof Model:</span> The AI continuously learns from new patterns, adapting to evolving compliance standards.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Enhanced Security:</span> Built with robust encryption ensuring sensitive reports are processed securely.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Results</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Transforming Efficiency & Accuracy with AI</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">99% Accuracy in Data Validation</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">With AI-driven field extraction, validation accuracy surged to 99%, eliminating manual errors.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">90% Reduction in Turnaround Time</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">Previously taking hours, the AI-powered system completes the task in seconds, enabling real-time decisions.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Scalable to 25+ Police Forces</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">The solution seamlessly handles validation requests from multiple departments, standardizing data.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Seamless Integration</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">The JSON-based structured output ensured smooth integration with internal software, enhancing workflow automation.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Future-Proof AI Model</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">Continuous learning capabilities mean the AI system adapts to new document formats and validation rules.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Benefits</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Benefits of AI-Powered Document Validation System</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-chart-line text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Increased Sales</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Boost your revenue with optimized features and effective data processing strategies.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-face-smile text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Customer Experience</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Provide a smooth and error-free operational experience to retain enterprise clients.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-eye text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Brand Visibility</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Increase your brand's presence with a highly scalable and optimized automated infrastructure.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-gears text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Efficient Processes</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Simplify management with efficient data automation and operational support solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem; margin-bottom: 2rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">FAQ</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Frequently Asked Questions</h4>
+                        
+                        <div class="faq-container" style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Can the AI handle different document formats?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Yes, our model supports PDFs and DOCX formats, ensuring flexible document processing.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">How does the system ensure high validation accuracy?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Our AI undergoes continuous training with real-world data, improving field extraction and minimizing false positives/negatives.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">What happens if a field is missing?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">The system flags missing fields in the JSON response, allowing immediate corrective actions.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Can the solution be expanded to validate additional fields?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Yes, the AI model is scalable and can be trained to validate more fields as per requirements.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">How secure is the data processing?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">We implement end-to-end encryption and compliance standards to ensure data privacy and security.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card" style="padding: 4rem; text-align: center; border-color: var(--brand); box-shadow: 0 10px 30px var(--brand-glow);">
+                        <div class="quote-icon text-brand" style="margin-bottom: 2rem; display: flex; justify-content: center; opacity: 1;"><i class="fa-solid fa-quote-left" style="font-size: 3rem;"></i></div>
+                        <p style="font-size: 1.25rem; font-style: italic; line-height: 1.8; margin-bottom: 2.5rem; color: white;">"Dynamic Labz transformed our document validation process with their AI-powered solution. What used to take our team hours of manual effort is now completed in seconds, with an astounding 99% accuracy rate. Their system not only improved our efficiency but also ensured compliance across 25+ police forces. The integration was seamless, and their team provided outstanding support throughout the process. This solution has been a game-changer for us!"</p>
+                        <strong class="text-brand" style="font-size: 1.2rem; font-family: var(--font-mono); text-transform: uppercase;">CEO of MedTech Company</strong>
+                        <span style="display: block; font-size: 1rem; color: var(--text-muted); margin-top: 0.5rem;">Client identity withheld due to confidentiality agreement</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
