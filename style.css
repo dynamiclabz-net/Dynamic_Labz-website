@@ -220,6 +220,46 @@ body {
     will-change: transform; 
 }
 
+/* =========================================
+   PREMIUM NAVBAR HOVER EFFECT
+   ========================================= */
+
+/* 1. Target only the main top-level links, set them up for the animation */
+.nav-links > a, 
+.nav-dropdown > a {
+    position: relative;
+    transition: color 0.3s ease, text-shadow 0.3s ease !important;
+}
+
+/* 2. Brighten the text and add a subtle glow on hover */
+.nav-links > a:hover, 
+.nav-dropdown > a:hover {
+    color: white !important;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* 3. Create the invisible glowing line hidden at the center of the text */
+.nav-links > a::after, 
+.nav-dropdown > a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -6px; /* Positions the line just below the word */
+    left: 50%; /* Starts the line in the dead center */
+    background-color: var(--brand);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth, snappy animation */
+    transform: translateX(-50%); /* Keeps it perfectly centered */
+    box-shadow: 0 0 10px var(--brand-glow); /* Adds the neon glow */
+    border-radius: 2px;
+}
+
+/* 4. When hovered, expand the line to 100% of the word's width */
+.nav-links > a:hover::after, 
+.nav-dropdown > a:hover::after {
+    width: 100%;
+}
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -1168,7 +1208,7 @@ body {
 /* =========================================
    TRUSTED ORGANIZATIONS (INFINITE MARQUEE)
    ========================================= */
-/* .trusted-marquee-container {
+.trusted-marquee-container {
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -1180,7 +1220,7 @@ body {
 
 .trusted-marquee-track {
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
     width: max-content;
     animation: scrollLogos 30s linear infinite; 
 }
@@ -1191,10 +1231,10 @@ body {
 
 @keyframes scrollLogos {
     to { transform: translateX(calc(-50% - 1.25rem)); } 
-} */
+}
 
 /* The Floating Logo Container (Boxes Removed) */
-/* .trust-logo-box {
+.trust-logo-box {
     width: 200px; 
     height: 100px;
     display: flex;
@@ -1209,7 +1249,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    filter: grayscale(100%) opacity(0.5);
+    /* filter: grayscale(100%) opacity(0.5); */
     transition: all 0.4s ease;
 }
 
@@ -1227,10 +1267,10 @@ body {
         height: 80px;
         padding: 0.5rem;
     }
-} */
+}
 
 /* The Floating Logo Container (original logo images with no hover effects) */
-/* .trust-logo-box {
+.trust-logo-box {
     width: 200px; 
     height: 100px;
     display: flex;
@@ -1239,50 +1279,44 @@ body {
     padding: 1rem;
 }
 
-.trust-logo-box img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
 @media (max-width: 768px) {
     .trust-logo-box {
         width: 150px;
         height: 80px;
         padding: 0.5rem;
     }
-} */
+}
 
 /* =========================================
    TRUSTED ORGANIZATIONS (STATIC GRID)
    ========================================= */
-.trusted-static-grid {
+/* .trusted-static-grid {
     display: flex;
-    flex-wrap: wrap; /* Allows logos to drop to a new line on smaller screens */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 4rem; /* Plenty of breathing room between logos */
+    gap: 4rem;
     margin-top: 4rem;
-}
+} */
 
 /* The invisible container for each logo */
-.trust-logo-static {
+/* .trust-logo-static {
     width: 160px; 
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 /* Original Colors By Default (No hover effects) */
-.trust-logo-static img {
+/* .trust-logo-static img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-}
+} */
 
 /* Responsive adjustments for Tablets */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .trusted-static-grid {
         gap: 3rem;
     }
@@ -1290,10 +1324,10 @@ body {
         width: 140px;
         height: 70px;
     }
-}
+} */
 
 /* Responsive adjustments for Mobile Phones */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .trusted-static-grid {
         gap: 2rem;
     }
@@ -1301,7 +1335,7 @@ body {
         width: 120px;
         height: 60px;
     }
-}
+} */
 
 /* =========================================
    TESTIMONIALS CAROUSEL 
@@ -1848,4 +1882,197 @@ body {
     100% {
         transform: translateX(-50%);
     }
+}
+
+/* =========================================
+   RESPONSIVE UTILITY CLASSES (ADDED FOR FIX)
+   ========================================= */
+
+/* Handles 2-column grids safely */
+.grid-2-col {
+    grid-template-columns: repeat(2, 1fr) !important;
+}
+
+/* Handles heavy interior card paddings safely */
+.card-lg-padding {
+    padding: 3.5rem !important;
+}
+.card-xl-padding {
+    padding: 4rem !important;
+}
+
+/* Mobile Breakpoints to collapse the elements */
+@media (max-width: 768px) {
+    .grid-2-col {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .card-lg-padding {
+        padding: 1.5rem !important;
+    }
+    
+    .card-xl-padding {
+        padding: 2rem !important;
+    }
+}
+
+/* =========================================
+   UNIVERSAL LAYOUT & TYPOGRAPHY FIX
+   ========================================= */
+
+/* 1. Prevent Word Chopping */
+h1, h2, h3, h4, h5, h6, p, span, a {
+    word-break: normal !important;
+    overflow-wrap: break-word !important; 
+    hyphens: none !important;
+}
+
+/* 2. Widen the entire website on Desktop and Laptops */
+.container {
+    width: 100% !important;
+    max-width: 95% !important; /* Increases the width to use almost the whole screen */
+    margin: 0 auto !important;
+}
+
+/* 3. Mobile specific spacing and sizing */
+@media (max-width: 768px) {
+    /* Completely remove the large empty space on the left/right for mobile */
+    .container, 
+    section, 
+    header, 
+    footer {
+        padding-left: 0.75rem !important;  /* Leaves just a tiny, safe margin */
+        padding-right: 0.75rem !important;
+        overflow-x: hidden !important; /* Prevents the screen from sliding sideways */
+    }
+
+    /* Slightly lower the minimum font size so it perfectly fits the new width */
+    h1 { 
+        font-size: clamp(1.8rem, 8vw, 4rem) !important; 
+        line-height: 1.2 !important; 
+    }
+    
+    h2 { 
+        font-size: clamp(1.5rem, 6vw, 3rem) !important; 
+        line-height: 1.2 !important; 
+    }
+    
+    h3 { 
+        font-size: clamp(1.2rem, 5vw, 2.2rem) !important; 
+        line-height: 1.3 !important; 
+    }
+}
+
+/* =========================================
+   EXACT FOOTER & CTA RESPONSIVENESS FIX
+   ========================================= */
+
+/* Ensure the footer itself never stretches beyond the screen */
+footer, .footer {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Mobile Breakpoint for Footer & CTA */
+@media (max-width: 768px) {
+    
+    /* 1. Fix the Footer Grid (Overrides inline HTML to stack vertically) */
+    .footer-grid {
+        grid-template-columns: 1fr !important; /* Changes 3 columns into 1 single column */
+        gap: 2.5rem !important;
+    }
+
+    /* 2. Fix the CTA Banner */
+    .cta-banner {
+        padding: 2.5rem 1rem !important; /* Overrides massive desktop padding */
+        margin-bottom: 3rem !important; 
+        width: 100% !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: column !important; /* Stacks text and button on top of each other */
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    /* 3. Fix the CTA Button & long email address */
+    .cta-banner .btn-massive {
+        width: 100% !important; 
+        max-width: 320px !important; /* Keeps it a nice clickable size on phones */
+        margin-top: 1rem !important;
+        padding: 1rem !important;
+        font-size: 1rem !important;
+        white-space: normal !important; 
+        word-break: break-all !important; /* Forces the long email address to wrap instead of bleeding off-screen */
+    }
+
+    /* 4. Force the bottom copyright and legal links to stack neatly */
+    .footer-bottom {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 1.5rem !important;
+    }
+    
+    .footer-bottom .f-legal {
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+    }
+}
+
+/* =========================================
+   AWESOME MOBILE MENU UPGRADE
+   ========================================= */
+
+/* 1. Widen the menu slightly for better text fit */
+.mobile-menu-overlay {
+    width: 260px !important; 
+    padding: 2rem 1.5rem !important;
+}
+
+.mobile-menu-content {
+    gap: 0 !important; /* Removes default gap so we can control spacing perfectly */
+}
+
+/* 2. Reset the old centered link styles */
+.m-link {
+    text-align: left !important; 
+    border-bottom: none !important; 
+    padding: 0.6rem 0 !important;
+    transform: none !important; /* Stops the old scale-up pop effect */
+}
+
+/* 3. Style the Main Level Links */
+.m-link.main-link {
+    font-weight: 600 !important;
+    font-size: 1.15rem !important;
+    color: white !important;
+    margin-top: 0.5rem !important;
+}
+
+.m-link.main-link:hover {
+    color: var(--brand) !important;
+}
+
+/* 4. Create the sleek vertical line for Sub-Menus */
+.m-sub-menu {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid rgba(118, 31, 227, 0.3); /* Subtle purple line */
+    margin-left: 0.5rem; 
+    padding-left: 1rem; /* Spacing between line and text */
+    margin-bottom: 0.5rem;
+}
+
+/* 5. Style the Sub-Level Links with a cool hover effect */
+.m-link.sub-link {
+    font-size: 0.95rem !important;
+    color: var(--text-muted) !important;
+    font-weight: 400 !important;
+    padding: 0.4rem 0 !important;
+    transition: all 0.3s ease !important;
+}
+
+.m-link.sub-link:hover {
+    color: white !important;
+    padding-left: 8px !important; /* Cool slide right effect on touch/hover */
 }

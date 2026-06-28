@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP Solutions & Business Automation | Dynamic Labz</title>
+    
+    <meta name="description" content="Streamline heavy backend processes with Dynamic Labz. We build custom ERP systems, SAP architectures, and workflow automations to scale enterprise operations.">
+    <meta name="keywords" content="Business Automation, ERP Solutions, SAP Integration, Workflow Automation, Tech Agency Ahmedabad">
+    
+    <link rel="icon" type="image/png" href="assets/images/dynamiclabz/icon-1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="page-transition"></div>
+
+    <canvas id="quantum-network"></canvas>
+    <div class="grid-floor"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-wrap">
+            <div class="brand">
+                <a href="index.html"><img src="assets/images/dynamiclabz/logo.svg" alt="Dynamic Labz Mark" class="nav-mark"></a>
+            </div>
+            
+            <div class="nav-links">
+                <div class="nav-dropdown">
+                    <a href="index.html" style="cursor: pointer;">Home <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px; opacity: 0.7;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html#work">Case Studies</a>
+                        <a href="index.html#process">Deployment Protocol</a>
+                        <a href="index.html#testimonials">Success Stories</a>
+                    </div>
+                </div>
+
+                <div class="nav-dropdown">
+                    <a href="index.html#services" style="cursor: pointer;">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px; opacity: 0.7;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="app-development.html">App Development</a>
+                        <a href="web-development.html">Web Development</a>
+                        <a href="erp-solutions.html">ERP Solutions</a>
+                        <a href="marketing.html">Marketing & SEO Services</a>
+                    </div>
+                </div>
+                
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+            </div>
+            
+            <a href="contact.html" class="btn-glass desktop-cta" style="font-size: 1.1rem;">Initiate Project</a>
+
+            <button class="mobile-menu-toggle" aria-label="Open mobile menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Navbar - Mobile -->
+    <div class="mobile-menu-overlay" id="mobile-dropdown">
+        <div class="mobile-menu-content">
+            
+            <a href="index.html" class="m-link main-link">Home</a>
+            <div class="m-sub-menu">
+                <a href="index.html#work" class="m-link sub-link">Case Studies</a>
+                <a href="index.html#process" class="m-link sub-link">Deployment Protocol</a>
+                <a href="index.html#testimonials" class="m-link sub-link">Success Stories</a>
+            </div>
+
+            <a href="index.html#services" class="m-link main-link">Services</a>
+            <div class="m-sub-menu">
+                <a href="app-development.html" class="m-link sub-link">App Development</a>
+                <a href="web-development.html" class="m-link sub-link">Web Development</a>
+                <a href="erp-solutions.html" class="m-link sub-link">ERP Solutions</a>
+                <a href="marketing.html" class="m-link sub-link">Marketing & SEO</a>
+            </div>
+
+            <a href="about.html" class="m-link main-link">About Us</a>
+            <a href="portfolio.html" class="m-link main-link">Portfolio</a>
+            
+            <a href="contact.html" class="btn-primary" style="margin-top: 1rem; padding: 0.8rem; font-size: 1rem; text-align: center; border-radius: 8px; display: block; width: 100%;">Initiate Project</a>
+        </div>
+    </div>
+
+    <main id="smooth-wrapper">
+        
+        <!-- Hero Section -->
+        <section class="page-header">
+            <div class="container hero-inner text-center">
+                <div class="pill-badge fade-up" style="margin: 0 auto 2rem auto;">
+                    <span class="live-dot"></span> <span style="letter-spacing: 1px;">SERVICES / ERP SOLUTIONS</span>
+                </div>
+                <h1 class="hero-title reveal-text" style="text-align: center; width: 100%; max-width: 1000px; margin: 0 auto;">
+                    Enterprise <span class="text-brand">Intelligence.</span>
+                </h1>
+                <p class="hero-desc fade-up" style="margin: 2rem auto 0 auto; text-align: center;">
+                    We architect scalable business automation platforms, comprehensive ERP systems, and intelligent workflows to streamline your complex operations.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Detail Section -->
+        <section class="services-detail" style="padding: 5rem 0 8rem 0;">
+            <div class="container">
+                <div class="glass-grid">
+                    
+                    <div class="glass-card fade-up">
+                        <i class="fa-solid fa-network-wired s-icon"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">SAP & ERP Automation</h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">Seamlessly sync your massive data pools. We architect custom modules that automatically transfer and format data between isolated enterprise platforms.</p>
+                        <ul class="pillar-list" style="margin: 0;">
+                            <li><i class="fa-solid fa-check"></i> SAP Architecture Integration</li>
+                            <li><i class="fa-solid fa-check"></i> Third-Party API Syncing</li>
+                            <li><i class="fa-solid fa-check"></i> Real-Time Database Updating</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card fade-up" style="transition-delay: 0.1s;">
+                        <i class="fa-solid fa-brain s-icon"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Business Workflow Systems</h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">Replacing manual data entry with machine speed. We build sophisticated algorithms to automatically execute, route, and validate complex corporate processes.</p>
+                        <ul class="pillar-list" style="margin: 0;">
+                            <li><i class="fa-solid fa-check"></i> Custom Python RPA</li>
+                            <li><i class="fa-solid fa-check"></i> Automated Compliance Checks</li>
+                            <li><i class="fa-solid fa-check"></i> Intelligent Lead Routing</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card fade-up" style="transition-delay: 0.2s;">
+                        <i class="fa-solid fa-server s-icon"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Enterprise Dashboards</h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">Centralize your company's data. We build custom CRM and property management systems with strict Role-Based Access Control and unified reporting.</p>
+                        <ul class="pillar-list" style="margin: 0;">
+                            <li><i class="fa-solid fa-check"></i> Custom Internal CRMs</li>
+                            <li><i class="fa-solid fa-check"></i> Role-Based Access Control</li>
+                            <li><i class="fa-solid fa-check"></i> Automated Report Generation</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio-section" style="padding: 0 0 8rem 0; border-top: 1px solid var(--border-color); padding-top: 8rem;">
+            <div class="container">
+                <div class="section-header-row fade-up">
+                    <div class="pill-badge"><span class="live-dot"></span> <span>PROVEN CAPABILITIES</span></div>
+                    <h2 class="section-heading">Deployed ERPs & Systems</h2>
+                    <p class="hero-desc">Real-world workflow automations engineered by Dynamic Labz.</p>
+                </div>
+                
+                <div class="portfolio-grid grid-2-col" style="gap: 3rem;">
+                
+                    <!-- 1. Sanki Events -->
+                    <div class="portfolio-card fade-up glass-card card-lg-padding" style="display: flex; flex-direction: column; position: relative; overflow: hidden; min-height: 400px; gap: 0;">
+                        <div style="position: absolute; top: -10%; right: -5%; font-size: 16rem; font-weight: 800; color: var(--brand); opacity: 0.09; line-height: 1; pointer-events: none; user-select: none; font-family: var(--font-mono);">01</div>
+                        <span class="p-category text-brand" style="margin-bottom: 1rem; position: relative; z-index: 1;">AI & Automation System</span>
+                        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; position: relative; z-index: 1;">Sanki Events</h3>
+                        <p style="margin-bottom: 2rem; position: relative; z-index: 1; font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+                            An intelligent WhatsApp automation engine that utilizes NLP to capture leads, provide instant event quotes, and seamlessly sync data into the enterprise CRM, saving 40+ hours a week.
+                        </p>
+                        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 3rem; position: relative; z-index: 1;">
+                            <span style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">WhatsApp API</span>
+                            <span style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">CRM Sync</span>
+                        </div>
+                        <button onclick="openCaseStudy('cs-whatsapp-bot')" class="btn-text" style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left; position: relative; z-index: 1;">
+                            Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- 2. JumpinGo -->
+                    <div class="portfolio-card fade-up glass-card card-lg-padding" style="display: flex; flex-direction: column; position: relative; overflow: hidden; min-height: 400px; gap: 0;">
+                        <div style="position: absolute; top: -10%; right: -5%; font-size: 16rem; font-weight: 800; color: var(--brand); opacity: 0.09; line-height: 1; pointer-events: none; user-select: none; font-family: var(--font-mono);">02</div>
+                        <span class="p-category text-brand" style="margin-bottom: 1rem; position: relative; z-index: 1;">High-Volume Ticketing Backend</span>
+                        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; position: relative; z-index: 1;">JumpinGo</h3>
+                        <p style="margin-bottom: 2rem; position: relative; z-index: 1; font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+                            A custom web portal engineered to handle massive, temporary traffic spikes for a traveling jumping park festival, featuring a heavy backend booking system.
+                        </p>
+                        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 3rem; position: relative; z-index: 1;">
+                            <span style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">High-Traffic Scaling</span>
+                            <span style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Payment Gateways</span>
+                        </div>
+                        <button onclick="openCaseStudy('modal-jumpingo')" class="btn-text" style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left; position: relative; z-index: 1;">
+                            Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- 3. Ruby Chemicals -->
+                    <div class="portfolio-card fade-up glass-card card-lg-padding" style="display: flex; flex-direction: column; position: relative; overflow: hidden; min-height: 400px; gap: 0;">
+                        <div style="position: absolute; top: -10%; right: -5%; font-size: 16rem; font-weight: 800; color: var(--brand); opacity: 0.09; line-height: 1; pointer-events: none; user-select: none; font-family: var(--font-mono);">03</div>
+                        <span class="p-category text-brand" style="margin-bottom: 1rem; position: relative; z-index: 1;">Manufacturing & Supply Chain ERP</span>
+                        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; position: relative; z-index: 1;">Ruby Chemicals</h3>
+                        <p style="margin-bottom: 2rem; position: relative; z-index: 1; font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+                            A comprehensive manufacturing ERP tailored for the chemical industry, featuring real-time inventory tracking, batch processing, and automated compliance reporting.
+                        </p>
+                        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 3rem; position: relative; z-index: 1;">
+                            <span style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Inventory Management</span>
+                            <span style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Batch Processing</span>
+                        </div>
+                        <button onclick="openCaseStudy('cs-ruby-chemicals')" class="btn-text" style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left; position: relative; z-index: 1;">
+                            Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- 4. Property Management -->
+                    <div class="portfolio-card fade-up glass-card card-lg-padding" style="display: flex; flex-direction: column; position: relative; overflow: hidden; min-height: 400px; gap: 0;">
+                        <div style="position: absolute; top: -10%; right: -5%; font-size: 16rem; font-weight: 800; color: var(--brand); opacity: 0.09; line-height: 1; pointer-events: none; user-select: none; font-family: var(--font-mono);">04</div>
+                        <span class="p-category text-brand" style="margin-bottom: 1rem; position: relative; z-index: 1;">Enterprise CRM & Matching Engine</span>
+                        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; position: relative; z-index: 1;">Property Management</h3>
+                        <p style="margin-bottom: 2rem; position: relative; z-index: 1; font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+                            A comprehensive property portal featuring an intelligent matching algorithm based on 35+ parameters and a robust 70-point addition module with Role-Based Access Control.
+                        </p>
+                        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 3rem; position: relative; z-index: 1;">
+                            <span style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Custom CRM</span>
+                            <span style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Algorithm Matching</span>
+                        </div>
+                        <button onclick="openCaseStudy('cs-property-management')" class="btn-text" style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left; position: relative; z-index: 1;">
+                            Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- 5. TCA -->
+                    <div class="portfolio-card fade-up glass-card card-lg-padding" style="display: flex; flex-direction: column; position: relative; overflow: hidden; min-height: 400px; gap: 0;">
+                        <div style="position: absolute; top: -10%; right: -5%; font-size: 16rem; font-weight: 800; color: var(--brand); opacity: 0.09; line-height: 1; pointer-events: none; user-select: none; font-family: var(--font-mono);">05</div>
+                        <span class="p-category text-brand" style="margin-bottom: 1rem; position: relative; z-index: 1;">Enterprise Resource Planning</span>
+                        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; position: relative; z-index: 1;">TCA</h3>
+                        <p style="margin-bottom: 2rem; position: relative; z-index: 1; font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+                            A robust corporate ERP platform engineered to automate heavy internal workflows, financial tracking, and inter-departmental data synchronization.
+                        </p>
+                        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 3rem; position: relative; z-index: 1;">
+                            <span style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Data Sync</span>
+                            <span style="padding: 6px 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);">Workflow Automation</span>
+                        </div>
+                        <button onclick="openCaseStudy('cs-tca')" class="btn-text" style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left; position: relative; z-index: 1;">
+                            Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" id="contact" style="position: relative; overflow: hidden; border-top: 1px solid var(--border-color); padding-top: 5rem;">
+            <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 60%; height: 300px; background: var(--brand); filter: blur(150px); opacity: 0.1; z-index: 0; pointer-events: none;"></div>
+            
+            <div class="container" style="position: relative; z-index: 1;">
+                
+                <div class="cta-banner glass-card fade-up" style="margin-bottom: 5rem;">
+                    <h2>Initiate your digital transformation.</h2>
+                    <p>Consult with our lead architects today.</p>
+                    <a href="mailto:divyam@dynamiclabz.net" class="btn-primary btn-massive magnetic-btn">divyam@dynamiclabz.net</a>
+                </div>
+                
+                <div class="footer-grid fade-up" style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; margin-bottom: 3rem;">
+                    
+                    <div class="f-brand-col">
+                        <img src="assets/images/dynamiclabz/logo.svg" alt="Dynamic Labz" style="height: 40px; margin-bottom: 1.5rem;">
+                        <p style="color: var(--text-muted); line-height: 1.6; max-width: 320px; margin-bottom: 2rem; font-size: 1rem;">Architecting high-performance digital infrastructure for enterprises that demand excellence.</p>
+                        <div class="social-links" style="display: flex; gap: 1rem;">
+                            <a href="https://wa.me/919016971591?text=Hi%20Dynamic%20Labz,%20I%20have%20a%20project%20inquiry..." target="_blank" class="social-icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/dynamic-labz/" class="social-icon" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.instagram.com/dynamic_labz" class="social-icon" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@Dynamic_Labz" class="social-icon" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="f-links-col">
+                        <h4 style="font-family: var(--font-main); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-main); margin-bottom: 1.5rem;">Navigation</h4>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1.2rem;">
+                            <li><a href="index.html" class="f-link">Home</a></li>
+                            <li><a href="about.html" class="f-link">About Us</a></li>
+                            <li><a href="index.html#services" class="f-link">Services</a></li>
+                            <li><a href="portfolio.html" class="f-link">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="f-links-col">
+                        <h4 style="font-family: var(--font-main); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-main); margin-bottom: 1.5rem;">Connect</h4>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1.2rem;">
+                            <li><a href="mailto:divyam@dynamiclabz.net" class="f-link">divyam@dynamiclabz.net</a></li>
+                            <li style="color: var(--text-muted); font-size: 0.95rem;">Ahmedabad, Gujarat</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.05);">
+                    <div class="f-copy" style="color: var(--text-muted); font-size: 0.9rem;">© 2026 Dynamic Labz. Engineered natively.</div>
+                    <div class="f-legal" style="display: flex; gap: 2rem;">
+                        <a href="privacy-policy.html" class="f-link" style="font-size: 0.85rem;">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="f-link" style="font-size: 0.85rem;">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Go-To-Top Button -->
+    <button id="goTopBtn" class="go-top-btn" aria-label="Scroll back to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- ============================================== -->
+    <!-- OVERLAY CASE STUDIES -->
+    <!-- ============================================== -->
+
+    <!-- Sanki Events Modal -->
+    <div class="case-study-overlay" id="cs-whatsapp-bot" data-lenis-prevent>
+        <button class="close-cs-btn" onclick="closeCaseStudy('cs-whatsapp-bot')">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        
+        <div class="container" style="max-width: 1200px;"> 
+            <div class="cs-header fade-up" style="text-align: center; border-bottom: none; padding-bottom: 0;">
+                <span class="p-category text-brand">Case Study</span>
+                <h1 class="hero-title reveal-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">Sanki Events</h1>
+                <p class="hero-desc" style="margin: 0 auto;">Intelligent WhatsApp Automation & Lead Generation Engine</p>
+            </div>
+
+            <div class="cs-content fade-up">
+                <!-- Image Slider -->
+                <!-- <div class="cs-slider-wrapper" style="position: relative; margin-top: 3rem; margin-bottom: 4rem; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); height: 500px; background: var(--surface);">
+                    <div class="cs-slider" style="display: flex; width: 100%; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none;">
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/portfolio/wa-slide1.jpg" alt="WhatsApp Bot Screenshot 1" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/portfolio/wa-slide2.jpg" alt="WhatsApp Bot Screenshot 2" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                    </div>
+                    <button class="slider-btn prev-cs-btn" style="position: absolute; z-index: 3; top: 50%; left: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="slider-btn next-cs-btn" style="position: absolute; z-index: 3; top: 50%; right: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-right"></i></button>
+                </div> -->
+
+                <div class="cs-grid" style="grid-template-columns: 1fr; gap: 4rem;">
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Problem Statement</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 500;">The Bottleneck in Customer Communication</h4>
+                        <p class="cs-text">Sanki Events, a premier event management company, was facing a massive influx of daily customer inquiries via social media and messaging platforms. Potential clients were asking repetitive questions regarding event packages, venue availability, and base pricing.</p>
+                        <p class="cs-text">Because their sales team had to manually reply to every message, response times were lagging. This delay caused a significant drop-off in high-intent leads who expected instant answers. Sanki Events needed an automated, conversational system capable of qualifying leads instantly and providing 24/7 customer engagement without sounding robotic.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Our Solution</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 500;">NLP-Driven WhatsApp Lead Engine</h4>
+                        <p class="cs-text">Dynamic Labz engineered a sophisticated conversational AI bot integrated directly into the WhatsApp Business API. Utilizing Natural Language Processing (NLP), the system goes beyond rigid button-menus; it accurately understands user intent, allowing clients to type inquiries naturally.</p>
+                        <p class="cs-text">When a user initiates a chat, the bot automatically guides them through a conversational lead-qualification flow—asking for their event type, guest count, and estimated budget. It instantly delivers dynamic PDF brochures tailored to their answers. If the inquiry requires human intervention, the bot seamlessly hands the conversation over to a live sales agent, simultaneously pushing the captured lead data directly into Sanki Events' CRM.</p>
+                    </div>
+
+                    <!-- <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/portfolio/wa-sec1.jpg" alt="Automated Lead Capture" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 01</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Automated Lead Capture</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">Engaging conversational flows that instantly qualify prospects based on budget and event needs.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/portfolio/wa-sec2.jpg" alt="Instant Brochure Delivery" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 02</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Dynamic Media Delivery</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">Automated dispatch of pricing catalogs, venue images, and PDFs directly within the WhatsApp chat.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/portfolio/wa-sec3.jpg" alt="CRM Synchronization" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 03</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Live Agent Handoff & CRM</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">Seamless transition to human sales reps with automated data syncing to the centralized database.</p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div>
+                        <h3 class="cs-section-title text-brand">Key Features</h3>
+                        <ul class="pillar-list" style="margin-top: 1.5rem;">
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">NLP Intent Recognition:</span> Processes natural language to understand exactly what the user is asking.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">24/7 Automated Engagement:</span> Zero downtime, ensuring inquiries are answered instantly.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Multi-format Media Support:</span> Instantly sends images, locations, and PDF brochures.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Smart CRM Integration:</span> Pushes qualified lead data straight to the sales dashboard.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Seamless Human Handoff:</span> Pauses the bot automatically when a user requests to speak to a human agent.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Results</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Maximizing Sales Funnel Efficiency</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">90% Faster Response Time</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">Reduced initial inquiry response time from hours down to milliseconds.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">300% Increase in Lead Capture</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">24/7 availability ensured night-time and weekend leads were captured immediately.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Massive Time Savings</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">Saved the sales team over 40 hours a week by eliminating repetitive manual replies.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card" style="padding: 4rem; text-align: center; border-color: var(--brand); box-shadow: 0 10px 30px var(--brand-glow); margin-top: 4rem;">
+                        <div class="quote-icon text-brand" style="margin-bottom: 2rem; display: flex; justify-content: center; opacity: 1;"><i class="fa-solid fa-quote-left" style="font-size: 3rem;"></i></div>
+                        <p style="font-size: 1.25rem; font-style: italic; line-height: 1.8; margin-bottom: 2.5rem; color: white;">"Implementing WhatsApp Automation through Dynamic Labz has enhanced our customer communication tremendously. Fast, reliable, and effective. A must-have for any business."</p>
+                        <strong class="text-brand" style="font-size: 1.2rem; font-family: var(--font-mono); text-transform: uppercase;">Akshat Shah</strong>
+                        <span style="display: block; font-size: 1rem; color: var(--text-muted); margin-top: 0.5rem;">Founder of Sanki Events</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JumpinGo Modal -->
+    <div class="case-study-overlay" id="modal-jumpingo" data-lenis-prevent>
+        <button class="close-cs-btn" onclick="closeCaseStudy('modal-jumpingo')">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="container" style="max-width: 1200px;">
+            
+            <div class="cs-header fade-up" style="text-align: center; border-bottom: none; padding-bottom: 0;">
+                <span class="p-category text-brand">Case Study</span>
+                <h1 class="hero-title reveal-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">JumpinGo</h1>
+                <p class="hero-desc" style="margin: 0 auto; max-width: 800px;">High-Volume Event Ticketing & Booking Portal</p>
+            </div>
+
+            <div class="cs-content fade-up">
+                
+                <div class="cs-slider-wrapper" style="position: relative; margin-top: 3rem; margin-bottom: 4rem; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); height: 500px; background: var(--surface);">
+                    <div class="cs-slider" style="display: flex; width: 100%; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none;">
+                        
+                        <!-- Dashboard Screens -->
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-dashboard1.png" alt="JumpinGo Portal Screenshot" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-dashboard2.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-dashboard3.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-dashboard4.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-dashboard5.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <!-- Website Screens -->
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-website1.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-website2.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-website3.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-website4.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-website5.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_JumpinGo/JumpinGo-website6.png" alt="JumpinGo Checkout Flow" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        
+                    </div>
+                    
+                    <button class="slider-btn prev-cs-btn" style="position: absolute; z-index: 3; top: 50%; left: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="slider-btn next-cs-btn" style="position: absolute; z-index: 3; top: 50%; right: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <div class="cs-grid" style="grid-template-columns: 1fr; gap: 4rem;">
+                    
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">The Goal</h3>
+                        <p class="cs-text">JumpinGo, a traveling jumping park festival, experiences massive bursts of website visitors the exact moment tickets go on sale for a new city. Their biggest challenge was keeping the website online during these intense traffic spikes while ensuring families could easily book specific time slots without the system double-booking.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">How We Built It</h3>
+                        <p class="cs-text">Instead of relying on standard website templates that crack under pressure, we built a custom, highly reliable booking system designed specifically to handle thousands of simultaneous users. We streamlined the checkout process, making it incredibly fast for parents to select a date, pick a time slot, and securely pay for their tickets in just a few clicks.</p>
+                        <p class="cs-text">Behind the scenes, we created a smart calendar system that updates ticket availability instantly for everyone browsing, completely eliminating the risk of overselling a time slot.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">The Launch</h3>
+                        <p class="cs-text">During the first major ticket drop on the new platform, the system flawlessly handled the massive surge of excited customers. Thousands of tickets were processed in minutes with zero website crashes or slowdowns, resulting in a completely sold-out event and a stress-free experience for the business owners.</p>
+                    </div>
+
+                    <div style="margin-top: 1rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Benefits</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Why this works for Event Organizers</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-shield-halved text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Crash-Proof Reliability</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">The website stays online and fast, even when thousands of people try to buy tickets at the exact same second.</p>
+                            </div>
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-cart-arrow-down text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Lightning-Fast Checkout</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">A simple, straightforward buying process that gets customers from selecting a time to paying in under a minute.</p>
+                            </div>
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-calendar-check text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Accurate Availability</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Inventory updates instantly, so you never have to deal with the headache of refunding overbooked time slots.</p>
+                            </div>
+                            
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-ticket text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Automated Ticketing</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Customers receive their digital tickets and receipts instantly via email, completely hands-off for your team.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem; margin-bottom: 2rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">FAQ</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Frequently Asked Questions</h4>
+                        
+                        <div class="faq-container" style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Can customers buy tickets for different time slots at once?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Yes, the checkout flow allows parents and groups to select multiple time slots or different packages in a single, unified transaction.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">How are the tickets delivered?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">As soon as the payment is confirmed, the system instantly emails a digital ticket containing a unique QR code for quick, secure scanning at the event entrance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card" style="padding: 4rem; text-align: center; border-color: var(--brand); box-shadow: 0 10px 30px var(--brand-glow); margin-top: 2rem;">
+                        <div class="quote-icon text-brand" style="margin-bottom: 2rem; display: flex; justify-content: center; opacity: 1;"><i class="fa-solid fa-quote-left" style="font-size: 3rem;"></i></div>
+                        <p style="font-size: 1.25rem; font-style: italic; line-height: 1.8; margin-bottom: 2.5rem; color: white;">"Dynamic Labz completely changed the game for us. Our old website crashed every time we announced a new city. With this new portal, we sold out our biggest event in record time without a single technical glitch!"</p>
+                        <strong class="text-brand" style="font-size: 1.2rem; font-family: var(--font-mono); text-transform: uppercase;">Event Director</strong>
+                        <span style="display: block; font-size: 1rem; color: var(--text-muted); margin-top: 0.5rem;">JumpinGo Festival</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ruby Chemicals Modal (NEW) -->
+    <div class="case-study-overlay" id="cs-ruby-chemicals" data-lenis-prevent>
+        <button class="close-cs-btn" onclick="closeCaseStudy('cs-ruby-chemicals')"><i class="fa-solid fa-xmark"></i></button>
+        <div class="container" style="max-width: 1200px;">
+            <div class="cs-header fade-up" style="text-align: center; border-bottom: none; padding-bottom: 0;">
+                <span class="p-category text-brand">Case Study</span>
+                <h1 class="hero-title reveal-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">Ruby Chemicals</h1>
+                <p class="hero-desc" style="margin: 0 auto;">Manufacturing & Supply Chain ERP Platform</p>
+            </div>
+            <div class="cs-content fade-up">
+                <div class="cs-slider-wrapper" style="position: relative; margin-top: 3rem; margin-bottom: 4rem; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); height: 500px; background: var(--surface);">
+                    <div class="cs-slider" style="display: flex; width: 100%; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none;">
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <!-- Placeholder image for Ruby Chemicals -->
+                            <img src="assets/images/portfolio/ruby-chemicals.png" alt="Ruby Chemicals ERP" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-grid" style="grid-template-columns: 1fr; gap: 4rem;">
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Project Overview</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 500;">Scaling Chemical Production</h4>
+                        <p class="cs-text">Ruby Chemicals required a robust ERP framework to overhaul their manufacturing process. We deployed a system featuring real-time inventory tracking, batch processing oversight, and automated compliance reporting tailored specifically to the chemical industry's safety standards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Property Management Modal -->
+    <div class="case-study-overlay" id="cs-property-management" data-lenis-prevent>
+        <button class="close-cs-btn" onclick="closeCaseStudy('cs-property-management')">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        
+        <div class="container" style="max-width: 1200px;"> 
+            
+            <div class="cs-header fade-up" style="text-align: center; border-bottom: none; padding-bottom: 0;">
+                <span class="p-category text-brand">Case Study</span>
+                <h1 class="hero-title reveal-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">Property Management</h1>
+                <p class="hero-desc" style="margin: 0 auto;">Enhancing In-House Property Selection & Visit Planning</p>
+            </div>
+
+            <div class="cs-content fade-up">
+                
+                <div class="cs-slider-wrapper" style="position: relative; margin-top: 3rem; margin-bottom: 4rem; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); height: 500px; background: var(--surface);">
+                    
+                    <div class="cs-slider" style="display: flex; width: 100%; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none;">
+                        
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Property-Managment/ssc-inquiry-form.png" alt="Raw Screenshot 1" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Property-Managment/ssc-property-detail-design.png" alt="Raw Screenshot 2" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Property-Managment/ssc-property-detail-design_1.png" alt="Raw Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Property-Managment/ssc-property-detail-design_2.png" alt="Raw Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Property-Managment/ssc-property-detail-design_3.png" alt="Raw Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_Property-Managment/ssc-property-detail-design_4.png" alt="Raw Screenshot 3" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                        
+                    </div>
+                    
+                    <button class="slider-btn prev-cs-btn" style="position: absolute; z-index: 3; top: 50%; left: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="slider-btn next-cs-btn" style="position: absolute; z-index: 3; top: 50%; right: 20px; transform: translateY(-50%); background: rgba(3,1,8,0.6); border: 1px solid var(--brand); color: white; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); transition: 0.3s;"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <div class="cs-grid" style="grid-template-columns: 1fr; gap: 4rem;">
+                    
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Problem Statement</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 500;">Enhancing In-House Property Selection Process</h4>
+                        <p class="cs-text">The client, a leading property broker, faced significant challenges in managing property recommendations for walk-in clients. Their existing process was entirely manual, requiring employees to verbally gather client requirements and manually search through property records. This not only consumed valuable time but also led to inconsistencies and errors in capturing client preferences.</p>
+                        <p class="cs-text">Additionally, the manual system made it difficult to plan property visits effectively. Coordinating schedules between clients, property owners, and brokers required extensive back-and-forth communication, causing delays and confusion. The client needed a comprehensive solution to streamline these processes, improve data accuracy, and enhance the overall client experience.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Our Solution</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 500;">Property Listing & Visit Planning Portal</h4>
+                        <p class="cs-text">We developed an in-depth property listing portal tailored for the client's in-house operations. This portal streamlines the entire property selection process, starting with an extensive client requirement form comprising over 35+ questions. Once submitted, the system applies intelligent filters based on primary criteria—such as identifying properties within a 2.5 km radius.</p>
+                        <p class="cs-text">The portal then presents the top 15 property matches with a visually appealing UI/UX design. Clients can shortlist properties they find interesting, moving seamlessly to the visit planner. Notifications are automatically sent to property owners, ensuring smooth coordination.</p>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/project_Property-Managment/ssc-inquiry-form.png" alt="Inquiry Form" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 01</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Property Inquiry Form</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">A dynamic, user-friendly form capturing detailed client preferences effortlessly.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/project_Property-Managment/ssc-property-detail-design.png" alt="Match Results" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 02</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Property Match Results</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">A visually appealing dashboard showcasing top property matches with detailed insights.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card sec-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="height: 220px; border-bottom: 1px solid var(--border-color); overflow: hidden;">
+                                <img src="assets/images/project_Property-Managment/ssc-visit-plan_with_time.png" alt="Visit Planner" class="sec-img" style="width: 100%; height: 100%; object-fit: fill; filter: grayscale(40%); transition: 0.5s ease;">
+                            </div>
+                            <div style="padding: 2.5rem; flex-grow: 1;">
+                                <span class="text-brand" style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;">SECTION 03</span>
+                                <h4 style="margin: 1rem 0; font-size: 1.3rem;">Visit Planner</h4>
+                                <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">Simplified interface for scheduling property visits, enhancing client convenience and engagement.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand">Key Features</h3>
+                        <ul class="pillar-list" style="margin-top: 1.5rem;">
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Advanced Client Requirement Form:</span> Over 35+ detailed fields capturing precise preferences.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Intelligent Matching Algorithm:</span> Prioritizes top 15 properties based on location and parameters.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Seamless Visit Planning:</span> Effortless scheduling with automated notifications to owners.</li>
+                            <li><i class="fa-solid fa-check"></i> <span style="color: var(--text-main);">Robust Management Module:</span> Simplified property addition with over 70+ data points and RBAC.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Results</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Achieving Operational Excellence</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Streamlined Onboarding</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">Reduced manual effort with an automated, in-depth client requirement form, enhancing efficiency.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);"> Improved Property Match Accuracy</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">The intelligent algorithm ensures high-quality matches, aligning perfectly with client preferences.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);"> Enhanced Client Experience</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">Engaging UI/UX fosters better client interaction, leading to quicker and more confident decisions.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Optimized Visit Planning</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">Simplified scheduling process improves coordination between clients, brokers, and property owners.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem;">
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Efficient Data Management</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.8rem; line-height: 1.5;">Secure property database with comprehensive details, improving internal data handling and accessibility.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Benefits</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Benefits of Property Management Portal</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-chart-line text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Increased Sales</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Boost your revenue with optimized portal features and effective matching strategies.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-face-smile text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Customer Experience</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Provide a smooth and enjoyable property selection experience to retain clients.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-eye text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Brand Visibility</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Increase your firm's professional presence with a well-designed digital infrastructure.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <i class="fa-solid fa-gears text-brand" style="font-size: 1.8rem;"></i>
+                                <strong style="font-size: 1.1rem; color: var(--text-main);">Efficient Processes</strong>
+                                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin: 0;">Simplify portal management with efficient property databases and visit planners.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem; margin-bottom: 2rem;">
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">FAQ</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 2rem; font-weight: 500;">Frequently Asked Questions</h4>
+                        
+                        <div class="faq-container" style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Can the portal be customized to fit different business models?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Yes, the portal is highly customizable to cater to unique business requirements across the real estate industry.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">How secure is the data within the portal?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">We implement role-based access control and secure database practices to ensure data integrity and confidentiality.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Is it possible to integrate this portal with existing CRM systems?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Yes, the portal can be integrated with most CRM platforms for seamless data synchronization.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Can new properties be added easily by employees?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Absolutely. The property management module includes a user-friendly form with over 70+ data fields for comprehensive listings.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item glass-card" style="padding: 1.5rem 2rem; cursor: pointer; transition: 0.3s; overflow: hidden;">
+                                <div class="faq-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+                                    <strong style="font-size: 1.1rem; color: var(--text-main); line-height: 1.4;">Does the system support multi-user access with different roles?</strong>
+                                    <i class="fa-solid fa-plus text-brand faq-icon" style="transition: transform 0.3s; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="faq-content">
+                                    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Yes, the portal supports multiple user roles, providing specific access permissions based on employee hierarchy.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card" style="padding: 4rem; text-align: center; border-color: var(--brand); box-shadow: 0 10px 30px var(--brand-glow);">
+                        <div class="quote-icon text-brand" style="margin-bottom: 2rem; display: flex; justify-content: center; opacity: 1;"><i class="fa-solid fa-quote-left" style="font-size: 3rem;"></i></div>
+                        <p style="font-size: 1.25rem; font-style: italic; line-height: 1.8; margin-bottom: 2.5rem; color: white;">"We had a seamless experience working with Divyam from Dynamic Labz. His commitment to delivering on time and a thorough understanding of our project requirements and its technical nuances made the entire process stress-free."</p>
+                        <strong class="text-brand" style="font-size: 1.2rem; font-family: var(--font-mono); text-transform: uppercase;">Pratik Thakkar</strong>
+                        <span style="display: block; font-size: 1rem; color: var(--text-muted); margin-top: 0.5rem;">Square Second Consultants</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TCA Modal (NEW) -->
+    <div class="case-study-overlay" id="cs-tca" data-lenis-prevent>
+        <button class="close-cs-btn" onclick="closeCaseStudy('cs-tca')"><i class="fa-solid fa-xmark"></i></button>
+        <div class="container" style="max-width: 1200px;">
+            <div class="cs-header fade-up" style="text-align: center; border-bottom: none; padding-bottom: 0;">
+                <span class="p-category text-brand">Case Study</span>
+                <h1 class="hero-title reveal-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">TCA</h1>
+                <p class="hero-desc" style="margin: 0 auto;">Enterprise Resource Planning Solutions</p>
+            </div>
+            <div class="cs-content fade-up">
+                <div class="cs-slider-wrapper" style="position: relative; margin-top: 3rem; margin-bottom: 4rem; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); height: 500px; background: var(--surface);">
+                    <div class="cs-slider" style="display: flex; width: 100%; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none;">
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <!-- Placeholder image for TCA -->
+                            <img src="assets/images/portfolio/tca-erp.png" alt="TCA ERP" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-grid" style="grid-template-columns: 1fr; gap: 4rem;">
+                    <div>
+                        <h3 class="cs-section-title text-brand" style="margin-bottom: 0.5rem;">Project Overview</h3>
+                        <h4 style="font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 500;">Corporate Workflow Automation</h4>
+                        <p class="cs-text">TCA required a bespoke ERP system to unify their fragmented internal processes. We architected a central platform that handles heavy financial tracking, automates repetitive corporate workflows, and synchronizes data perfectly across all company departments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
