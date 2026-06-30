@@ -656,6 +656,33 @@ body {
     box-shadow: 0 10px 30px var(--brand-glow);
 }
 
+/* =========================================
+   RESPONSIVE GIANT BACKGROUND NUMBERS
+   ========================================= */
+
+/* Use clamp() to smoothly scale the text from 5.5rem on mobile to 16rem on desktop */
+.portfolio-card > div[style*="font-size: 16rem"] {
+    font-size: clamp(5.5rem, 14vw, 16rem) !important;
+    transition: all 0.3s ease;
+}
+
+/* Tablet Layout Adjustments */
+@media (max-width: 1024px) {
+    .portfolio-card > div[style*="font-size: 16rem"] {
+        top: -5% !important;
+        right: -2% !important;
+    }
+}
+
+/* Mobile Layout Adjustments */
+@media (max-width: 768px) {
+    .portfolio-card > div[style*="font-size: 16rem"] {
+        top: 0% !important;
+        right: 0% !important;
+        opacity: 0.06 !important; /* Drops opacity slightly so mobile text is easier to read over it */
+    }
+}
+
 .p-card-image {
     width: 100%;
     height: 300px;
@@ -1466,10 +1493,22 @@ body {
     padding: 100px 0;
 }
 
+/* =========================================
+   CASE STUDY CLOSE BUTTON (FIXED SCROLL FIX)
+   ========================================= */
 .close-cs-btn {
-    position: fixed;
-    top: 30px;
-    right: 5vw;
+    position: sticky;
+    top: 30px; /* The distance it stays from the top while scrolling */
+    
+    /* These margins push it to the right and align it perfectly */
+    margin-left: auto; 
+    margin-right: 5vw; 
+    
+    /* Counteracts the 100px padding of your modal so it locks at the top immediately */
+    margin-top: -70px; 
+    margin-bottom: 70px; 
+    
+    /* Your existing styles */
     background: rgba(118, 31, 227, 0.1);
     border: 1px solid var(--border-color);
     color: white;
@@ -1483,11 +1522,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    /* Added a glass blur so it looks premium when text scrolls underneath it */
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px);
 }
 
 .close-cs-btn:hover {
     background: var(--brand);
     transform: rotate(90deg);
+}
+
+/* Responsive Fix for Mobile & Tablets */
+@media (max-width: 992px) {
+    .close-cs-btn {
+        top: 20px;
+        margin-top: -80px; 
+        margin-right: 20px; 
+    }
 }
 
 .cs-header {
@@ -1943,7 +1995,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     footer {
         padding-left: 0.75rem !important;  /* Leaves just a tiny, safe margin */
         padding-right: 0.75rem !important;
-        overflow-x: hidden !important; /* Prevents the screen from sliding sideways */
+        /* overflow-x: hidden !important; */
     }
 
     /* Slightly lower the minimum font size so it perfectly fits the new width */
@@ -1969,7 +2021,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 
 /* Ensure the footer itself never stretches beyond the screen */
 footer, .footer {
-    overflow-x: hidden !important;
+    /* overflow-x: hidden !important; */
     width: 100% !important;
     box-sizing: border-box !important;
 }
@@ -2075,4 +2127,47 @@ footer, .footer {
 .m-link.sub-link:hover {
     color: white !important;
     padding-left: 8px !important; /* Cool slide right effect on touch/hover */
+}
+
+/* =========================================
+   PORTFOLIO FILTER TABS
+   ========================================= */
+.portfolio-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.filter-btn {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-muted);
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-main);
+}
+
+.filter-btn:hover {
+    border-color: var(--brand-glow);
+    color: white;
+}
+
+.filter-btn.active {
+    background: var(--brand);
+    border-color: var(--brand);
+    color: white;
+    box-shadow: 0 4px 15px var(--brand-glow);
+}
+
+.portfolio-item {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.portfolio-item.hide-item {
+    display: none !important;
 }

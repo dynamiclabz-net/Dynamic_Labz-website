@@ -684,3 +684,59 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// =========================================
+// PORTFOLIO TAB FILTERING
+// =========================================
+document.addEventListener("DOMContentLoaded", () => {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    if (filterBtns.length > 0 && portfolioItems.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                
+                // 1. Manage Active State
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // 2. Get the filter category
+                const filterValue = btn.getAttribute('data-filter');
+
+                // 3. Loop through items
+                portfolioItems.forEach(item => {
+                    // Split the data-category string into an array (e.g. "app web" -> ["app", "web"])
+                    const itemCategories = item.getAttribute('data-category').split(' '); 
+                    
+                    // Check if 'all' is selected, OR if the array includes our target filter
+                    if (filterValue === 'all' || itemCategories.includes(filterValue)) {
+                        item.classList.remove('hide-item');
+                        
+                        // Force a reflow
+                        void item.offsetWidth; 
+                        
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.95)';
+                        
+                        // Wait for transition before hiding from DOM grid
+                        setTimeout(() => {
+                            if (!item.style.opacity || item.style.opacity === '0') {
+                                item.classList.add('hide-item');
+                            }
+                        }, 400); 
+                    }
+                });
+
+                // 4. Refresh GSAP ScrollTrigger after layout shift
+                setTimeout(() => {
+                    if (typeof ScrollTrigger !== 'undefined') {
+                        ScrollTrigger.refresh();
+                    }
+                }, 450);
+            });
+        });
+    }
+});
