@@ -1536,7 +1536,8 @@ body {
 /* Responsive Fix for Mobile & Tablets */
 @media (max-width: 992px) {
     .close-cs-btn {
-        top: 20px;
+        top: -50px;
+        /* top: 20px; */
         margin-top: -80px; 
         margin-right: 20px; 
     }
