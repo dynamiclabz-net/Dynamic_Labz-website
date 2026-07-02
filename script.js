@@ -686,12 +686,86 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // =========================================
-// PORTFOLIO TAB FILTERING
+// PORTFOLIO TAB FILTERING & GSAP DROPDOWN
 // =========================================
 document.addEventListener("DOMContentLoaded", () => {
     const filterBtns = document.querySelectorAll('.filter-btn');
     const portfolioItems = document.querySelectorAll('.portfolio-item');
+    const filterDropdownToggle = document.querySelector('.filter-dropdown-toggle');
+    const filterContainer = document.querySelector('.portfolio-filters');
+    const currentFilterText = document.querySelector('.current-filter');
 
+    let dropdownOpen = false;
+    let mm = gsap.matchMedia();
+
+    // Handle Mobile Dropdown Toggle
+    if (filterDropdownToggle && filterContainer) {
+        
+        // Only apply these GSAP rules on screens 992px and smaller
+        mm.add("(max-width: 992px)", () => {
+            // Initial State: Snap it closed
+            gsap.set(filterContainer, { autoAlpha: 0, y: -15, scaleY: 0.95, transformOrigin: "top center" });
+
+            filterDropdownToggle.addEventListener('click', toggleDropdown);
+
+            return () => {
+                // Cleanup instantly if the user resizes back to a desktop monitor
+                filterDropdownToggle.removeEventListener('click', toggleDropdown);
+                gsap.set(filterContainer, { clearProps: "all" }); 
+                dropdownOpen = false;
+                filterDropdownToggle.classList.remove('open');
+            };
+        });
+
+        function toggleDropdown(e) {
+            e.stopPropagation();
+            dropdownOpen = !dropdownOpen;
+            
+            if (dropdownOpen) {
+                filterDropdownToggle.classList.add('open');
+                
+                // Morphing Box Reveal
+                gsap.to(filterContainer, {
+                    autoAlpha: 1,
+                    y: 0,
+                    scaleY: 1,
+                    duration: 0.5,
+                    ease: "back.out(1.5)"
+                });
+                
+                // Staggered Button Text Fade-In
+                gsap.fromTo(filterBtns, 
+                    { opacity: 0, x: -10 }, 
+                    { opacity: 1, x: 0, duration: 0.3, stagger: 0.05, ease: "power2.out", delay: 0.1, overwrite: true }
+                );
+            } else {
+                closeFilterDropdown();
+            }
+        }
+
+        // Close if the user clicks anywhere outside the menu
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992 && dropdownOpen && !filterContainer.contains(e.target) && !filterDropdownToggle.contains(e.target)) {
+                closeFilterDropdown();
+            }
+        });
+    }
+
+    function closeFilterDropdown() {
+        if(!dropdownOpen || window.innerWidth > 992) return;
+        dropdownOpen = false;
+        if(filterDropdownToggle) filterDropdownToggle.classList.remove('open');
+        
+        gsap.to(filterContainer, {
+            autoAlpha: 0,
+            y: -10,
+            scaleY: 0.95,
+            duration: 0.3,
+            ease: "power2.in"
+        });
+    }
+
+    // Existing Grid Filter Logic (Works perfectly for both Desktop & Mobile)
     if (filterBtns.length > 0 && portfolioItems.length > 0) {
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
@@ -700,28 +774,30 @@ document.addEventListener("DOMContentLoaded", () => {
                 filterBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
 
-                // 2. Get the filter category
+                // 2. Update Mobile Dropdown Text securely
+                if (currentFilterText) {
+                    currentFilterText.textContent = btn.textContent;
+                }
+
+                // 3. Trigger close animation for mobile
+                closeFilterDropdown();
+
+                // 4. Get the filter category
                 const filterValue = btn.getAttribute('data-filter');
 
-                // 3. Loop through items
+                // 5. Loop through grid items
                 portfolioItems.forEach(item => {
-                    // Split the data-category string into an array (e.g. "app web" -> ["app", "web"])
                     const itemCategories = item.getAttribute('data-category').split(' '); 
                     
-                    // Check if 'all' is selected, OR if the array includes our target filter
                     if (filterValue === 'all' || itemCategories.includes(filterValue)) {
                         item.classList.remove('hide-item');
-                        
-                        // Force a reflow
-                        void item.offsetWidth; 
-                        
+                        void item.offsetWidth; // Force a reflow
                         item.style.opacity = '1';
                         item.style.transform = 'scale(1)';
                     } else {
                         item.style.opacity = '0';
                         item.style.transform = 'scale(0.95)';
                         
-                        // Wait for transition before hiding from DOM grid
                         setTimeout(() => {
                             if (!item.style.opacity || item.style.opacity === '0') {
                                 item.classList.add('hide-item');
@@ -730,7 +806,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                 });
 
-                // 4. Refresh GSAP ScrollTrigger after layout shift
+                // 6. Refresh GSAP ScrollTrigger so the grid stays locked in
                 setTimeout(() => {
                     if (typeof ScrollTrigger !== 'undefined') {
                         ScrollTrigger.refresh();

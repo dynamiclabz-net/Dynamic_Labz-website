@@ -28,6 +28,37 @@ body {
 }
 
 /* =========================================
+   CUSTOM TEXT SELECTION
+   ========================================= */
+/* ------------------------------------------------------- */
+/* Below is purple background and white text selection. Uncomment this section if you want to use it instead of the default white background and purple text selection. */
+/* ------------------------------------------------------- */
+/* ::selection {
+    background: var(--brand);
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background: var(--brand);
+    color: #ffffff;
+} */
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+/* Alternative: White background with Purple text */
+/* ------------------------------------------------------- */
+::selection {
+    background: #ffffff; 
+    color: var(--brand); 
+}
+
+::-moz-selection {
+    background: #ffffff;
+    color: var(--brand);
+}
+/* ------------------------------------------------------- */
+
+/* =========================================
    GEOMETRIC SVG PRELOADER STYLES
    ========================================= */
 #preloader {
@@ -2171,4 +2202,128 @@ footer, .footer {
 
 .portfolio-item.hide-item {
     display: none !important;
+}
+
+/* =========================================
+   PORTFOLIO FILTER TABS HORIZONTAL SCROLL (MOBILE)
+   ========================================= */
+@media (max-width: 992px) {
+    .portfolio-filters {
+        flex-wrap: nowrap;           /* Stops the buttons from wrapping/stacking */
+        justify-content: flex-start; /* Aligns them to the left for natural scrolling */
+        overflow-x: auto;            /* Enables horizontal scrolling */
+        
+        /* Hide scrollbars for a clean, app-like look */
+        -ms-overflow-style: none;    /* IE/Edge */
+        scrollbar-width: none;       /* Firefox */
+        
+        padding-bottom: 10px;        /* Breathing room at the bottom */
+        scroll-snap-type: x mandatory; /* Makes the swipe feel premium and snappy */
+    }
+
+    .portfolio-filters::-webkit-scrollbar {
+        display: none; /* Hides the scrollbar in Chrome/Safari */
+    }
+
+    .filter-btn {
+        white-space: nowrap;       /* Prevents the button text from breaking into two lines */
+        flex: 0 0 auto;            /* Stops the buttons from squishing together */
+        scroll-snap-align: start;  /* Snaps the button perfectly into place when swiping */
+    }
+}
+
+/* =========================================
+   GSAP MORPHING DROPDOWN (MOBILE FILTERS)
+   ========================================= */
+.filter-dropdown-toggle {
+    display: none; /* Hidden on desktop */
+}
+
+/* Original desktop filters keep their layout, just remove their native bottom margin since the wrapper handles it now */
+@media (min-width: 993px) {
+    .custom-filter-wrapper .portfolio-filters {
+        margin-bottom: 0; 
+    }
+}
+
+@media (max-width: 992px) {
+    .custom-filter-wrapper {
+        max-width: 350px;
+        margin: 0 auto 3rem auto !important;
+        z-index: 50;
+    }
+
+    .filter-dropdown-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1.2rem 1.8rem;
+        border-radius: 12px;
+        color: white;
+        font-family: var(--font-main);
+        font-weight: 500;
+        font-size: 1.05rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+    }
+
+    .filter-dropdown-toggle.open {
+        border-color: var(--brand);
+        background: rgba(118, 31, 227, 0.05);
+        box-shadow: 0 0 20px var(--brand-glow);
+    }
+
+    .filter-dropdown-toggle .drop-icon {
+        color: var(--brand);
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .filter-dropdown-toggle.open .drop-icon {
+        transform: rotate(180deg);
+    }
+
+    /* Convert the row of buttons into a dropdown menu */
+    /* Convert the row of buttons into a dropdown menu */
+    .custom-filter-wrapper .portfolio-filters {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: rgba(15, 10, 30, 0.95);
+        border: 1px solid var(--brand);
+        border-radius: 12px;
+        padding: 0.5rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.8), 0 0 20px var(--brand-glow);
+        backdrop-filter: blur(20px);
+        gap: 0;
+        margin-bottom: 0;
+        
+        /* Hidden fallback before GSAP takes over */
+        opacity: 0;
+        visibility: hidden;
+        /* REMOVED: pointer-events: none; */ 
+    }
+
+    .custom-filter-wrapper .filter-btn {
+        width: 100%;
+        text-align: left;
+        background: transparent;
+        border: none;
+        border-radius: 8px;
+        padding: 1rem 1.5rem;
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+
+    .custom-filter-wrapper .filter-btn:hover,
+    .custom-filter-wrapper .filter-btn.active {
+        background: rgba(118, 31, 227, 0.15);
+        border-left: 3px solid var(--brand);
+        border-radius: 4px;
+        padding-left: 2.2rem; /* Premium sliding hover effect */
+    }
 }

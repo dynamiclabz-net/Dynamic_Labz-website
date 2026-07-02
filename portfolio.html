@@ -162,11 +162,20 @@
         <section class="portfolio-section" style="padding: 5rem 0 8rem 0;">
             <div class="container">
         
-                <div class="portfolio-filters fade-up">
-                    <button class="filter-btn active" data-filter="all">All Projects</button>
-                    <button class="filter-btn" data-filter="app">App Development</button>
-                    <button class="filter-btn" data-filter="web">Web Development</button>
-                    <button class="filter-btn" data-filter="erp">ERP Solutions</button>
+                <div class="custom-filter-wrapper fade-up" style="position: relative; margin-bottom: 4rem;">
+                    <!-- Mobile Display Toggle -->
+                    <div class="filter-dropdown-toggle">
+                        <span class="current-filter">All Projects</span>
+                        <i class="fa-solid fa-chevron-down drop-icon"></i>
+                    </div>
+                
+                    <!-- The original buttons -->
+                    <div class="portfolio-filters">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="app">App Development</button>
+                        <button class="filter-btn" data-filter="web">Web Development</button>
+                        <button class="filter-btn" data-filter="erp">ERP Solutions</button>
+                    </div>
                 </div>
         
                 <div class="portfolio-grid grid-2-col" style="gap: 3rem;">
@@ -257,13 +266,22 @@
 
                     <!-- Sanki Events -->
                     <div class="portfolio-card fade-up glass-card portfolio-item" data-category="erp" style="display: flex; flex-direction: column; position: relative; overflow: hidden; min-height: 300px; gap: 0; padding: 2.5rem; transition-delay: 0.2s;">
-                        <div style="position: absolute; top: -10%; right: -5%; font-size: 16rem; font-weight: 800; color: var(--brand); opacity: 0.09; line-height: 1; pointer-events: none; user-select: none; font-family: var(--font-mono);">08</div>
-                        <span class="p-category text-brand" style="margin-bottom: 1rem; position: relative; z-index: 1;">AI & Conversational Systems</span>
-                        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; position: relative; z-index: 1;">Sanki Events</h3>
-                        <p style="margin-bottom: 2rem; position: relative; z-index: 1; font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">An intelligent WhatsApp automation engine that utilizes NLP to capture leads, provide instant event quotes, and seamlessly sync data into the enterprise CRM.</p>
-                        <button onclick="openCaseStudy('cs-whatsapp-bot')" class="btn-text" 
-                            style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left; position: relative; z-index: 1;">
-                            Read Full Case Study <i class="fa-solid fa-arrow-right"></i>
+                        <div style="position: absolute; top: -10%; right: -5%; font-size: 16rem; font-weight: 800; color: var(--brand); opacity: 0.09; line-height: 1; pointer-events: none; user-select: none; font-family: var(--font-mono);">
+                            08
+                        </div>
+                        <span class="p-category text-brand" style="margin-bottom: 1rem; position: relative; z-index: 1;">
+                            AI & Conversational Systems
+                        </span>
+                        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; position: relative; z-index: 1;">
+                            Sanki Events
+                        </h3>
+                        <p style="margin-bottom: 2rem; position: relative; z-index: 1; font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+                            A sophisticated conversational AI and NLP-driven lead generation engine that provides 24/7 customer engagement,
+                            instantly qualifies prospects, and seamlessly synchronizes data with the enterprise CRM.
+                        </p>
+                        <button onclick="openCaseStudy('cs-whatsapp-bot')" class="btn-text" style="background: none; border: none; font-size: 1rem; cursor: pointer; padding: 0; margin-top: auto; font-family: var(--font-main); text-align: left; position: relative; z-index: 1;">
+                            Read Full Case Study
+                            <i class="fa-solid fa-arrow-right"></i>
                         </button>
                     </div>
                     
@@ -1720,11 +1738,27 @@
                     <div class="cs-slider" style="display: flex; width: 100%; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none;">
                         
                         <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
-                            <img src="assets/images/portfolio/diamond-1.png" alt="Diamond Fair Price Landing Page" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                            <img src="assets/images/project_DiamondFairPrice/DFP-website1.png" alt="Diamond Fair Price Landing Page" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
                         </div>
-                        
+
                         <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
-                            <img src="assets/images/portfolio/diamond-2.png" alt="Diamond Selection Tool" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                            <img src="assets/images/project_DiamondFairPrice/DFP-website2.png" alt="Diamond Fair Price Landing Page" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_DiamondFairPrice/DFP-website3.png" alt="Diamond Fair Price Landing Page" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_DiamondFairPrice/DFP-website4.png" alt="Diamond Fair Price Landing Page" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_DiamondFairPrice/DFP-website5.png" alt="Diamond Fair Price Landing Page" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
+                        </div>
+
+                        <div style="min-width: 100%; height: 100%; flex: 0 0 auto; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                            <img src="assets/images/project_DiamondFairPrice/DFP-website6.png" alt="Diamond Fair Price Landing Page" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.8);">
                         </div>
                         
                     </div>
