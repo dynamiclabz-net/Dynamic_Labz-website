@@ -719,9 +719,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         function toggleDropdown(e) {
             e.stopPropagation();
-            dropdownOpen = !dropdownOpen;
             
-            if (dropdownOpen) {
+            // FIX: Check if closed, then open it. If opened, pass to closeFilterDropdown.
+            if (!dropdownOpen) {
+                dropdownOpen = true; 
                 filterDropdownToggle.classList.add('open');
                 
                 // Morphing Box Reveal
@@ -753,7 +754,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function closeFilterDropdown() {
         if(!dropdownOpen || window.innerWidth > 992) return;
-        dropdownOpen = false;
+        
+        dropdownOpen = false; // FIX: State is correctly flipped here now
         if(filterDropdownToggle) filterDropdownToggle.classList.remove('open');
         
         gsap.to(filterContainer, {
