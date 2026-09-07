@@ -234,7 +234,7 @@ function initCanvas() {
         particles.push(new Particle());
     }
 }
-// initCanvas();
+initCanvas();
 
 function animateCanvas() {
     ctx.clearRect(0, 0, width, height);
@@ -268,7 +268,7 @@ function animateCanvas() {
     }
     requestAnimationFrame(animateCanvas);
 }
-// animateCanvas();
+animateCanvas();
 
 // 4. GSAP / CURSOR LOGIC
 gsap.registerPlugin(ScrollTrigger);
