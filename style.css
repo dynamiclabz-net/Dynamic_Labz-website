@@ -1556,7 +1556,7 @@ body {
     
     /* Added a glass blur so it looks premium when text scrolls underneath it */
     backdrop-filter: blur(15px); 
-    -webkit-backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: none;
 }
 
 .close-cs-btn:hover {
